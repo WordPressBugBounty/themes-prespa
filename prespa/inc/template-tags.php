@@ -557,7 +557,7 @@ function prespa_secondary_menu_markup() {
 }
 
 function prespa_call_to_action_markup() {
-	$button      = get_theme_mod( 'header_button_text', __( 'Contact', 'prespa' ) );
+	$button      = prespa_customizer_values( 'header_button_text' );
 	$button_link = get_theme_mod( 'header_button_link', '#' );
 	if ( ! $button ) {
 		return;

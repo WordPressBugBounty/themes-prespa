@@ -7,6 +7,23 @@
  * @package prespa
  */
 
+ /**
+  * Customizer values
+  * The defaults can be modified by a child theme
+  */
+  if ( ! function_exists( 'prespa_customizer_values' ) ) :
+	function prespa_customizer_values( $value ) {
+		$defaults = array(
+			'content_layout'     => 'seperate_containers',
+			'header_button_text' => __( 'Contact', 'prespa' ),
+			'has_secondary_menu' => true,
+			'header-menu-position' => 'static'
+		);
+
+		// Return the value from the theme mod, or fallback to the default
+		return get_theme_mod( $value, $defaults[$value]);
+	}
+endif;
 
  /**
   * Get lighter/darker color when given a hex value.
@@ -77,19 +94,19 @@ function prespa_has_breadcrumbs() {
 }
 
 function prespa_has_secondary_menu() {
-	return get_theme_mod( 'has_secondary_menu', true );
+	return prespa_customizer_values( 'has_secondary_menu' );
 }
 
 function prespa_is_fixed_header() {
-	return ( get_theme_mod( 'header-menu-position', 'static' ) == 'fixed' );
+	return prespa_customizer_values( 'header-menu-position' ) == 'fixed';
 }
 
 function prespa_is_sticky_header() {
-	return ( get_theme_mod( 'header-menu-position', 'static' ) == 'sticky' );
+	return prespa_customizer_values( 'header-menu-position' )  == 'sticky';
 }
 
 function prespa_is_static_header() {
-	return get_theme_mod( 'header-menu-position', 'static' ) == 'static';
+	return prespa_customizer_values( 'header-menu-position' )  == 'static';
 }
 
 function prespa_has_multicolumn_layout() {

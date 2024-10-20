@@ -354,7 +354,6 @@ function prespa_register_header_customizer( $wp_customize ) {
 			)
 		)
 	);
-
 }
 
 add_action( 'customize_register', 'prespa_register_header_customizer' );
@@ -366,10 +365,10 @@ if ( ! function_exists( 'prespa_customize_header_menu_options' ) ) :
 		$header_text_color = get_theme_mod( 'prespa_header_text_color', '#000' );
 
 		// static vs sticky header
-		$header_menu_position = get_theme_mod( 'header-menu-position', 'static' );
+		$header_menu_position = prespa_customizer_values( 'header-menu-position' );
 
 		$top_menu_text_color = get_theme_mod( 'top-menu_text_color', '#334142' );
-		$top_menu_bgr_color  = get_theme_mod( 'top-menu_bgr_color', '#fff' );
+		$top_menu_bgr_color  = get_theme_mod( 'top-menu_bgr_color', 'var(--wp--preset--color--bgr)' );
 		$top_bar_height      = is_admin_bar_showing() ? '2rem' : '0';
 
 		$header_menu_alignment = get_theme_mod( 'header-menu-alignment', 'right' );
@@ -489,7 +488,7 @@ if ( ! function_exists( 'prespa_customize_header_menu_options' ) ) :
 			stroke: <?php echo esc_attr( $top_menu_text_color ); ?>;
 		}
 		.main-navigation-container {
-			background-color: #fff;
+			background-color: var(--wp--preset--color--bgr);
 			position: relative;
 			z-index: 9;
 		}
@@ -514,7 +513,7 @@ if ( ! function_exists( 'prespa_customize_header_menu_options' ) ) :
 		}
 
 		.main-navigation-container.fixed-header {
-			background-color: #fff;
+			background-color: var(--wp--preset--color--bgr);
 		}
 
 		.site-title a, body p.site-description {

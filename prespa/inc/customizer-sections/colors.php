@@ -97,7 +97,6 @@ function prespa_customize_colors( $wp_customize ) {
 		)
 	);
 
-
 	// Body Text Color
 	$wp_customize->add_setting(
 		'body_text_color',
@@ -111,6 +110,24 @@ function prespa_customize_colors( $wp_customize ) {
 			'body_text_color',
 			array(
 				'label'   => esc_html__( 'Body Text Color', 'prespa' ),
+				'section' => 'colors',
+			)
+		)
+	);
+
+	// Body Background Color
+	$wp_customize->add_setting(
+		'body_bgr_color',
+		array(
+			'sanitize_callback' => 'sanitize_hex_color',
+		)
+	);
+	$wp_customize->add_control(
+		new WP_Customize_Color_Control(
+			$wp_customize,
+			'body_bgr_color',
+			array(
+				'label'   => esc_html__( 'Body Background Color', 'prespa' ),
 				'section' => 'colors',
 			)
 		)
@@ -156,7 +173,7 @@ function prespa_customize_colors( $wp_customize ) {
 	$wp_customize->add_setting(
 		'top-menu_bgr_color',
 		array(
-			'default'           => '#fff',
+			'default'           => 'var(--wp--preset--color--bgr)',
 			'sanitize_callback' => 'sanitize_hex_color',
 		)
 	);
@@ -200,6 +217,7 @@ if ( ! function_exists( 'prespa_customize_colors_css' ) ) :
 	function prespa_customize_colors_css() {
 
 		$body_text_color          = get_theme_mod( 'body_text_color' );
+		$body_bgr_color           = get_theme_mod( 'body_bgr_color' );
 		$headings_text_color      = get_theme_mod( 'headings_text_color', '#404040' );
 		$link_headings_text_color = get_theme_mod( 'link_headings_text_color', '#404040' );
 		$links_text_color         = get_theme_mod( 'links_text_color' );
@@ -217,11 +235,21 @@ if ( ! function_exists( 'prespa_customize_colors_css' ) ) :
 		<?php if ( $link_headings_text_color ) : ?>
 		--wp--preset--color--link-headings: <?php echo esc_attr( $link_headings_text_color ); ?>;
 		<?php endif; ?>
+		<?php if ( $body_bgr_color ) : ?>
+		--wp--preset--color--bgr: <?php echo esc_attr( $body_bgr_color ); ?>;
+		<?php else : ?>
+		--wp--preset--color--bgr: var(--wp--preset--color--white);
+		<?php endif; ?>
 		}
 
 		<?php if ( $body_text_color ) : ?> 
 		body {
 			color: <?php echo esc_attr( $body_text_color ); ?>;
+		}
+		<?php endif; ?>
+		<?php if ( $body_bgr_color ) : ?> 
+		body {
+			background-color: var(--wp--preset--color--bgr);
 		}
 		<?php endif; ?>
 		h1, h2, h3, h4, h5, h6 {

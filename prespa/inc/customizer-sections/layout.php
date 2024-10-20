@@ -304,20 +304,21 @@ function prespa_register_theme_layout_options( $wp_customize ) {
 add_action( 'customize_register', 'prespa_register_theme_layout_options' );
 
 function prespa_customize_css() {
+	// post wrap
+	$post_content_layout  = prespa_customizer_values( 'content_layout' );
+	$page_content_layout  = get_theme_mod( 'page_content_layout', 'one_container' );
 	$header_wrapper       = get_theme_mod( 'header_width', 1180 );
 	$wrapper              = get_theme_mod( 'container_width', 980 );
 	$wrapper_with_sidebar = get_theme_mod( 'container_width_has_sidebar', 1180 );
 	$footer_wrapper       = get_theme_mod( 'footer_width', 1180 );
-	// post wrap
-	$post_content_layout = get_theme_mod( 'content_layout', 'seperate_containers' );
-	$page_content_layout = get_theme_mod( 'page_content_layout', 'one_container' );
 	// sidebar
 	$page_layout          = get_theme_mod( 'page_layout', 'none' );
 	$post_layout          = get_theme_mod( 'post_layout', 'right' );
 	$post_archives_layout = get_theme_mod( 'post_archives_layout', 'right' );
 	$shop_layout          = get_theme_mod( 'shop_page_layout', 'none' );
+	$cursor_layout        = get_theme_mod( 'cursor_layout', 'transparent' );
 
-	$cursor_layout = get_theme_mod( 'cursor_layout', 'transparent' );
+	$body_bgr_color       = get_theme_mod( 'body_bgr_color' );
 	?>
 
 <style type="text/css">
@@ -347,12 +348,14 @@ function prespa_customize_css() {
 	body:not(.page):not(.single) .hentry:hover {
 		box-shadow: var(--p-box-shadow-hover);
 	}
+	<?php if ( !$body_bgr_color ) : ?>
 	body:not(.dark-mode) {
 		background-color: #f7f8f9
 	}
 	body:not(.dark-mode) .main-navigation-container {
 		background-color: #fff;
 	}
+	<?php endif; ?>
 	.comment-body,
 	.comment-form {
 		box-shadow: 0 20px 80px 0 rgba(193, 199, 212, 0.1);
