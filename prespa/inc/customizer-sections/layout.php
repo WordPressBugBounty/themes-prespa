@@ -430,6 +430,7 @@ function prespa_customize_css() {
 		}
 		.single .entry-footer {
 			border-bottom: 1px solid var(--p-line-light);
+			padding-bottom: 1.5rem;
 		}
 		.about-author.hentry {
 			border-bottom: 1px solid var(--p-line-light);

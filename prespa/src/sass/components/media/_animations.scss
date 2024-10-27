@@ -2,7 +2,7 @@
  * TEXT ANIMATION 
  * ================== */
 .p-scale-change-animation {
-	animation: prespa_scale_change 1.5s forwards;
+	animation: prespa_scale_change 1s forwards;
 }
 
 /* Text */
@@ -353,7 +353,7 @@ Button Hover Animations
 		opacity: 0;
 	}
 
-	50% {
+	25% {
 		transform: scale(1.2);
 		opacity: 0;
 	}

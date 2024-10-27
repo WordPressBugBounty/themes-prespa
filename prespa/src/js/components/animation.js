@@ -64,31 +64,53 @@ export function typingAnimation() {
 	const p = document.querySelectorAll( '.p-typewrite-animation' );
 
 	for ( let i = 0; i < p.length; i++ ) {
-		const pText = p[ i ].textContent;
+		const pHtml = p[ i ].innerHTML;
 		const span = document.createElement( 'span' );
-		span.textContent = pText;
-		p[ i ].textContent = ''; // Remove the existing text content of the p element
-		p[ i ].appendChild( span ); // Append the span element to the p element
+		span.innerHTML = pHtml;
+		p[ i ].innerHTML = ''; // Clear existing content
+		p[ i ].appendChild( span ); // Add the span
 
-		/**
-		 * Animate the span tag that we have just created
-		 */
 		const spanElement = p[ i ].querySelector( 'span' );
 		const h = p[ i ].clientHeight;
-		spanElement.innerText = '';
+		spanElement.innerHTML = ''; // Clear span for animation
 		p[ i ].style.visibility = 'visible';
 		p[ i ].style.opacity = '1';
 		p[ i ].style.height = h + 'px';
-		const str = pText.split( '' );
-		const el = p[ i ].querySelector( 'span' );
-		let running = '';
 
+		// Split by characters, but keep HTML tags intact
+		const strArray = pHtml.match( /(<[^>]+>|[^<]+)/g );
+
+		let index = 0;
 		function animate() {
-			// eslint-disable-next-line no-unused-expressions
-			str.length > 0
-				? ( el.innerHTML += str.shift() )
-				: clearTimeout( running );
-			running = setTimeout( animate, 45 );
+			if ( index < strArray.length ) {
+				const current = strArray[ index ];
+
+				if ( current.startsWith( '<' ) ) {
+					// It's an HTML tag (like <br> or <span>), append it fully
+					spanElement.innerHTML += current;
+				} else {
+					// It's a regular text, add it character by character
+					const textChars = current.split( '' );
+					let textIndex = 0;
+
+					function animateText() {
+						if ( textIndex < textChars.length ) {
+							spanElement.innerHTML += textChars[ textIndex ];
+							textIndex++;
+							setTimeout( animateText, 45 );
+						} else {
+							index++;
+							animate();
+						}
+					}
+
+					animateText();
+					return;
+				}
+
+				index++;
+				setTimeout( animate, 45 );
+			}
 		}
 
 		setTimeout( animate, 900 );

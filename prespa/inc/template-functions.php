@@ -139,19 +139,21 @@ add_filter( 'excerpt_length', 'prespa_default_excerpt_length' );
  */
 
 // Custom Excerpt Length to be used on post archives
-function prespa_the_excerpt( $limit ) {
-	$excerpt = explode( ' ', get_the_excerpt(), $limit );
+if ( ! function_exists( 'prespa_the_excerpt' ) ) :
+	function prespa_the_excerpt( $limit ) {
+		$excerpt = explode( ' ', get_the_excerpt(), $limit );
 
-	if ( count( $excerpt ) >= $limit ) {
-		array_pop( $excerpt );
-		$excerpt = implode( ' ', $excerpt ) . '...';
-	} else {
-		$excerpt = implode( ' ', $excerpt );
+		if ( count( $excerpt ) >= $limit ) {
+			array_pop( $excerpt );
+			$excerpt = implode( ' ', $excerpt ) . prespa_excerpt_more();
+		} else {
+			$excerpt = implode( ' ', $excerpt );
+		}
+
+		$excerpt = preg_replace( '`\\[[^\\]]*\\]`', '', $excerpt );
+		echo wp_kses_post( $excerpt );
 	}
-
-	$excerpt = preg_replace( '`\\[[^\\]]*\\]`', '', $excerpt );
-	echo esc_attr( $excerpt );
-}
+endif;
 
 /**
  * Replaces "[...]" (appended to automatically generated excerpts) with ... and
@@ -162,12 +164,11 @@ function prespa_the_excerpt( $limit ) {
  * @param string $link Link to single post/page.
  * @return string 'Read More' link prepended with an ellipsis.
  */
-function prespa_excerpt_more( $link ) {
-	if ( is_admin() ) {
-		return $link;
+if ( ! function_exists( 'prespa_excerpt_more' ) ) :
+	function prespa_excerpt_more() {
+		return '&hellip;';
 	}
-	return '&hellip;';
-}
+endif;
 
 add_filter( 'excerpt_more', 'prespa_excerpt_more' );
 
