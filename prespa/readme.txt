@@ -3,9 +3,9 @@
 Contributors: nravota12
 Tags: blog, news, e-commerce, one-column, two-columns, three-columns, four-columns, grid-layout, right-sidebar, left-sidebar, block-patterns, wide-blocks, custom-colors, custom-header, custom-logo, custom-menu, featured-image-header, featured-images, footer-widgets, full-width-template, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready
 Requires at least: 6.1
-Tested up to: 6.6
+Tested up to: 6.7
 Requires PHP: 5.6
-Stable tag: 1.4.5
+Stable tag: 1.4.6
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -41,6 +41,9 @@ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
 GNU General Public License for more details.
 
 == Changelog ==
+
+= 1.4.6 - December 2024 =
+* Update theme docs
 
 = 1.4.5 - October 2024 =
 * Add space before author box when no wrap layout and improve typewrite animation

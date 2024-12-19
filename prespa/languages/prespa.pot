@@ -190,7 +190,7 @@ msgid "One Click Demo Import"
 msgstr ""
 
 #: admin/theme-intro.php:233
-msgid "9 Demo templates"
+msgid "10 Demo templates"
 msgstr ""
 
 #: admin/theme-intro.php:237
@@ -218,7 +218,7 @@ msgid "15"
 msgstr ""
 
 #: admin/theme-intro.php:253
-msgid "39"
+msgid "47"
 msgstr ""
 
 #: admin/theme-intro.php:258

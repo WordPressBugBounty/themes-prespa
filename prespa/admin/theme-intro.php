@@ -230,7 +230,7 @@ function prespa_settings_page_doc() {
 												<?php esc_html_e( 'One Click Demo Import', 'prespa' );?>
 										</td>
 										<td><span class="dashicons dashicons-minus"></span></td>
-										<td><span class="dashicons dashicons-yes-alt"></span> <strong><?php esc_html_e('9 Demo templates','prespa'); ?></strong</td>
+										<td><span class="dashicons dashicons-yes-alt"></span> <strong><?php esc_html_e('10 Demo templates','prespa'); ?></strong</td>
 									</tr>
 									<tr>
 										<td><div class="nasio-tooltip"><span class="dashicons dashicons-editor-help"></span><span class="nasio-tooltiptext">
@@ -241,7 +241,7 @@ function prespa_settings_page_doc() {
 									</tr>
 									<tr>
 										<td><div class="nasio-tooltip"><span class="dashicons dashicons-editor-help"></span><span class="nasio-tooltiptext">
-											<?php esc_html_e( 'Add ready to use gutenberg block patterns with predefined content for an easier start with the theme.', 'prespa' ); ?></span></div>
+											<?php esc_html_e( 'Add ready to use gutenberg block patterns with predefined content for an easier start with the theme. No extra plugins needed!', 'prespa' ); ?></span></div>
 											<?php esc_html_e( 'Block Patterns', 'prespa' ); ?>
 										</td>
 										<td>
@@ -250,7 +250,7 @@ function prespa_settings_page_doc() {
 										</td>
 										<td>
 											<span class="dashicons dashicons-yes-alt"></span>
-											<?php esc_html_e( '39', 'prespa' ); ?>
+											<?php esc_html_e( '47', 'prespa' ); ?>
 										</td>
 									</tr>
 									<tr>
