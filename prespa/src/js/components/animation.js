@@ -31,11 +31,10 @@ export function articlesInViewport() {
 // for block patterns in viewport, run the animation on page load for better ui
 export function blocksInViewport() {
 	const allElements = document.querySelectorAll(
-		'[class^="p-animation"],[class*=" p-animation"]'
+		'[class^="p-animation"],[class*=" p-animation"], .hero-pattern .wp-block-columns'
 	);
 	for ( let i = 0; i < allElements.length; i++ ) {
 		if ( isInViewport( allElements[ i ] ) ) {
-			console.log( isInViewport( allElements[ i ] ) )
 			allElements[ i ].className += ' animated';
 		}
 	}

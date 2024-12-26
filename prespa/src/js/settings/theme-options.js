@@ -22,10 +22,10 @@ export default function themeOptions() {
 	darkMode();
 	backToTop();
 	featuresDarkMode();
+	blocksInViewport();
+	articlesInViewport();
+	spinner();
 	window.addEventListener( 'load', function() {
 		typingAnimation();
-		blocksInViewport();
-		articlesInViewport();
-		spinner();
 	} );
 }
