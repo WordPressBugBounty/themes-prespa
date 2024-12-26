@@ -5,7 +5,7 @@ Tags: blog, news, e-commerce, one-column, two-columns, three-columns, four-colum
 Requires at least: 6.1
 Tested up to: 6.7
 Requires PHP: 5.6
-Stable tag: 1.4.9
+Stable tag: 1.5.1
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -42,7 +42,7 @@ GNU General Public License for more details.
 
 == Changelog ==
 
-= 1.4.9 - December 2024 =
+= 1.5.1 - December 2024 =
 * Fix header preview.
 
 = 1.4.8 - December 2024 =

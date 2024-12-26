@@ -38,6 +38,9 @@ export function blocksInViewport() {
 			allElements[ i ].className += ' animated';
 		}
 	}
+	if ( document.querySelector( '.hero-pattern .wp-block-columns' ) ) {
+		document.querySelector( '.hero-pattern .wp-block-columns' ).classList.add( 'animated' );
+	}
 	runStatsAnimation();
 }
 
