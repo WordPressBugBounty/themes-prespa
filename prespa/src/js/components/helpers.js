@@ -36,10 +36,13 @@ export function animator( articles, distance = 5 ) {
 
 // Helper to check if element is in viewport
 export function isInViewport( element, distance = 5 ) {
+	const context = element.ownerDocument.defaultView || window;
+	const viewportHeight = context.innerHeight;
+
 	const rect = element.getBoundingClientRect();
 	const elemTop = rect.top + distance;
 	const elemBottom = rect.bottom;
-	const isVisible = elemTop < window.innerHeight && elemBottom >= 0;
+	const isVisible = elemTop < viewportHeight && elemBottom >= 0;
 	return isVisible;
 }
 

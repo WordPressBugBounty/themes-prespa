@@ -35,6 +35,7 @@ export function blocksInViewport() {
 	);
 	for ( let i = 0; i < allElements.length; i++ ) {
 		if ( isInViewport( allElements[ i ] ) ) {
+			console.log( isInViewport( allElements[ i ] ) )
 			allElements[ i ].className += ' animated';
 		}
 	}
