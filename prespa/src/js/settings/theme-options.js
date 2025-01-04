@@ -22,10 +22,8 @@ export default function themeOptions() {
 	darkMode();
 	backToTop();
 	featuresDarkMode();
-	window.addEventListener( 'load', function() {
-		typingAnimation();
-		blocksInViewport();
-		articlesInViewport();
-		spinner();
-	} );
+	blocksInViewport();
+	articlesInViewport();
+	typingAnimation();
+	spinner();
 }

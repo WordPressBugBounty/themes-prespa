@@ -509,10 +509,22 @@ function prespa_change_logo_class( $html ) {
 
 add_filter( 'get_custom_logo', 'prespa_change_logo_class' );
 
+/**
+ * 
+ * Prespa theme logo
+ * Replaces and updates prespa_dark_mode_logo() 
+ * @since v.1.5.3
+ */
 
-/* Dark Mode logo version */
-
-function prespa_dark_mode_logo() {
+function prespa_logo() {
+	if ( get_theme_mod( 'custom_logo' ) ) :
+		$image = wp_get_attachment_image_src( get_theme_mod( 'custom_logo' ), 'medium' );
+		?>
+		<a class="custom-logo-link light-mode-logo" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+			<img class="custom-logo" alt="<?php esc_attr_e( 'Prespa light mode logo ', 'prespa' ); ?>" src="<?php echo esc_url( $image[0] ); ?>" />
+		</a>
+		<?php
+	endif;
 	if ( get_theme_mod( 'dark_mode_logo' ) ) :
 		?>
 		<a class="custom-logo-link dark-mode-logo" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
@@ -521,8 +533,6 @@ function prespa_dark_mode_logo() {
 		<?php
 	endif;
 }
-
-/** Add Spinner */
 
 /**
  * Add spinner

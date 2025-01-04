@@ -52,8 +52,7 @@ prespa_schema_microdata( 'body' );
 		<div class="main-navigation-container">
 			<div class="header-content-wrapper">
 				<div class="site-branding">
-					<?php the_custom_logo();
-					prespa_dark_mode_logo();
+					<?php prespa_logo();
 					if ( display_header_text() == true ) : ?>
 					<div class="site-meta">
 						<div class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" <?php prespa_schema_microdata( 'site-title' ); ?> rel="home"><?php bloginfo( 'name' ); ?></a></div>

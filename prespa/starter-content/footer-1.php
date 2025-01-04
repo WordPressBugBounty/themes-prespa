@@ -18,7 +18,7 @@ $default_content = sprintf(
     <!-- /wp:group -->
     ',
     esc_html_x( 'Prespa', 'Theme starter content', 'prespa' ),
-    esc_html_x( 'Let\'s make something cool together. We are trusted by over 2000+ clients who can\'t be wrong.', 'Theme starter content', 'prespa' )
+    esc_html_x( 'Let\'s make something cool together. We are trusted by over 3000+ clients who can\'t be wrong.', 'Theme starter content', 'prespa' )
 );
 
 return array(
