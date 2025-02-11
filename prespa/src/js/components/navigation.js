@@ -187,35 +187,29 @@ export default function navigation() {
 		} );
 	}
 
-	document
-		.getElementById( 'search-open' )
-		.addEventListener( 'keydown', searchModalFocusTrap );
+	document.getElementById( 'search-open' ).addEventListener( 'keydown', searchModalFocusTrap );
 
 	// Resume keyboard navigation after search modal is closed via keyboard
-	document
-		.querySelector( '#search-open .close' )
-		.addEventListener( 'keydown', function( e ) {
-			// Number 13 is the "Enter" key on the keyboard
-			if ( e.keyCode === 13 )
-				setTimeout( function() {
-					document.querySelector( '.search-icon a' ).focus();
-				}, 100 );
-		} );
-	// Resume keyboard navigation after search modal is closed via button click
-	document
-		.querySelector( '#search-open .close' )
-		.addEventListener( 'click', function( e ) {
+	document.querySelector( '#search-open .close' ).addEventListener( 'keydown', function( e ) {
+		// Number 13 is the "Enter" key on the keyboard
+		if ( e.keyCode === 13 )
 			setTimeout( function() {
 				document.querySelector( '.search-icon a' ).focus();
-			}, 200 );
-		} );
+			}, 100 );
+	} );
+	// Resume keyboard navigation after search modal is closed via button click
+	document.querySelector( '#search-open .close' ).addEventListener( 'click', function( ) {
+		setTimeout( function() {
+			document.querySelector( '.search-icon a' ).focus();
+		}, 200 );
+	} );
 
 	// Skip mobile menu if not opened
 	function mobileMenuFocusSkip() {
-		if ( window.matchMedia( '(min-width: 864px)' ).matches )
-			return;
+		if ( window.matchMedia( '(min-width: 864px)' ).matches ) return;
 
 		const buttons = document.querySelectorAll( '.slide-menu button' );
+
 		menuButtons[ 0 ].addEventListener( 'keydown', function( e ) {
 			if (
 				this.getAttribute( 'aria-expanded' ) == 'false' &&
@@ -238,7 +232,5 @@ export default function navigation() {
 	}
 
 	//unload burger menu on page load
-	window.addEventListener( 'unload', function() {
-		document.getElementById( 'burger-check' ).checked = false;
-	} );
+	document.getElementById( 'burger-check' ).checked = false;
 }
