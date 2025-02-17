@@ -4,11 +4,6 @@
 	width: 100%;
 }
 
-/*rtl:ignore*/
-.navigation .page-numbers {
-	padding-left: 9px;
-}
-
 .navigation .page-numbers .navigation .page-numbers:hover,
 .navigation .page-numbers.current {
 	text-decoration: none;
@@ -35,7 +30,6 @@
 	margin-right: 2px;
 	margin-bottom: 5px;
 	font-size: 0.875rem;
-	letter-spacing: 8px;
 	border-radius: 2px;
 }
 
