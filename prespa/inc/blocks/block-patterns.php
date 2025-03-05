@@ -10,9 +10,11 @@ function prespa_register_block_patterns() {
 
 	$block_pattern_categories = apply_filters( 'prespa_block_pattern_categories', $block_pattern_categories );
 
-	foreach ( $block_pattern_categories as $name => $properties ) {
-		if ( ! WP_Block_Pattern_Categories_Registry::get_instance()->is_registered( $name ) ) {
-			register_block_pattern_category( $name, $properties );
+	if ( class_exists( 'WP_Block_Pattern_Categories_Registry' ) ) {
+		foreach ( $block_pattern_categories as $name => $properties ) {
+			if ( ! WP_Block_Pattern_Categories_Registry::get_instance()->is_registered( $name ) ) {
+				register_block_pattern_category( $name, $properties );
+			}
 		}
 	}
 }

@@ -143,7 +143,7 @@ if ( ! function_exists( 'prespa_show_time_to_read' ) ) :
 			$words_per_second = $words_per_minute / 60;
 
 			// Count the words in the content.
-			$word_count = str_word_count( strip_tags( $post->post_content ) );
+			$word_count = $word_count = count( preg_split('/\s+/u', strip_tags( $post->post_content ), -1, PREG_SPLIT_NO_EMPTY ) );
 
 			// [UNUSED] How many minutes?
 			$minutes = floor( $word_count / $words_per_minute );
