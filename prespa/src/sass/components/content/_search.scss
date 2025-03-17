@@ -100,7 +100,7 @@ body:not(.dark-mode) .header-search-form .feather {
 		position: relative;
 		display: inline-block;
 
-		button {
+		[type="submit"] {
 			background-color: transparent;
 		}
 	}

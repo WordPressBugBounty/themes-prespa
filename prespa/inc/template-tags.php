@@ -135,8 +135,8 @@ endif;
 
 // Time to read post
 if ( ! function_exists( 'prespa_show_time_to_read' ) ) :
-	function prespa_show_time_to_read( $display_post_views ) {
-		if ( 'post' == get_post_type() && $display_post_views ) {
+	function prespa_show_time_to_read( $time_to_read ) {
+		if ( 'post' == get_post_type() && $time_to_read ) {
 
 			global $post;
 			$words_per_minute = 225;
@@ -144,12 +144,6 @@ if ( ! function_exists( 'prespa_show_time_to_read' ) ) :
 
 			// Count the words in the content.
 			$word_count = $word_count = count( preg_split('/\s+/u', strip_tags( $post->post_content ), -1, PREG_SPLIT_NO_EMPTY ) );
-
-			// [UNUSED] How many minutes?
-			$minutes = floor( $word_count / $words_per_minute );
-
-			// [UNUSED] How many seconds (remainder)?
-			$seconds_remainder = floor( $word_count % $words_per_minute / $words_per_second );
 
 			// How many seconds (total)?
 			$seconds_total = floor( $word_count / $words_per_second );

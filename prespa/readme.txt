@@ -5,7 +5,7 @@ Tags: blog, news, e-commerce, one-column, two-columns, three-columns, four-colum
 Requires at least: 6.1
 Tested up to: 6.7
 Requires PHP: 5.6
-Stable tag: 1.5.6
+Stable tag: 1.5.7
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -41,6 +41,9 @@ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
 GNU General Public License for more details.
 
 == Changelog ==
+
+= 1.5.7 - March 2025 =
+* Improve WooCommerce compatibility
 
 = 1.5.6 - March 2025 =
 * Fix time to read count for non-latin texts

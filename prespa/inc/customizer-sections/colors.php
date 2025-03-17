@@ -258,7 +258,7 @@ if ( ! function_exists( 'prespa_customize_colors_css' ) ) :
 
 		body:not(.dark-mode) input[type="button"], 
 		body:not(.dark-mode) input[type="reset"], 
-		body:not(.dark-mode) [type="submit"]:not(.header-search-form button),
+		body:not(.dark-mode) [type="submit"],
 		.wp-block-button > .slider-button,
 		.prespa-featured-products-wrapper .button {
 			background-color: <?php echo $buttons_bgr_color ? esc_attr( $buttons_bgr_color ) : esc_attr( $primary_accent_color ); ?>;
@@ -303,7 +303,6 @@ if ( ! function_exists( 'prespa_customize_colors_css' ) ) :
 
 		.call-to-action.wp-block-button .wp-block-button__link {
 			background-color: transparent;
-			border: 1px solid #fff;
 		}
 
 		@media(min-width:54rem){

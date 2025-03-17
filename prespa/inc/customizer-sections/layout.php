@@ -336,8 +336,8 @@ function prespa_customize_css() {
 	}
 
 	<?php
-	// Post wrap, Post archives wrap - exclude woo products if applicable
-	if ( ( is_single() || prespa_is_blog() ) && $post_content_layout == 'seperate_containers' && ! ( class_exists( 'Woocommerce' ) && ( is_product() || is_product_category() ) ) ) :
+	// Post wrap, Post archives wrap - exclude woo pages if applicable
+	if ( ( is_single() || prespa_is_blog() ) && $post_content_layout == 'seperate_containers' && ! ( class_exists( 'Woocommerce' ) && ( is_shop() || is_product() || is_product_category() ) ) ) :
 		?>
 	.hentry,
 	#secondary > section {
@@ -380,8 +380,8 @@ function prespa_customize_css() {
 		}
 	}
 	<?php
-	// Page wrap - exclude woo products if applicable
-	elseif ( is_page() && $page_content_layout == 'seperate_containers' && ! ( class_exists( 'Woocommerce' ) && ( is_shop() || is_product_category() ) ) ) :
+	// Page wrap - exclude woo pages if applicable
+	elseif ( is_page() && $page_content_layout == 'seperate_containers' && ! ( class_exists( 'Woocommerce' ) && ( is_shop() || is_product_category() || is_cart() || is_checkout() ) ) ) :
 		?>
 	.hentry, #secondary > section {
 		box-shadow: var(--p-box-shadow);

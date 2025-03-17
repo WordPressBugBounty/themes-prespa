@@ -1,3 +1,9 @@
+.woocommerce {
+	.site-main {
+		margin-top: 1.5rem
+	}
+}
+
 // Floating cart
 .site-header-cart {
 
@@ -126,7 +132,7 @@
 		top: 0;
 		position: absolute;
 		left: 0;
-		color: $color__yellow__main;
+		color: $color__orange__main;
 	}
 }
 
@@ -173,7 +179,7 @@ p.stars {
 
 			&::before {
 				content: "\53";
-				color: $color__yellow__main;
+				color: $color__orange__main;
 				opacity: 1;
 			}
 		}
@@ -185,7 +191,7 @@ p.stars {
 
 			&::before {
 				content: "\53";
-				color: $color__yellow__main;
+				color: $color__orange__main;
 				opacity: 1;
 			}
 
@@ -200,7 +206,7 @@ p.stars {
 
 			&::before {
 				content: "\53";
-				color: $color__yellow__main;
+				color: $color__orange__main;
 				opacity: 1;
 			}
 		}
@@ -410,8 +416,8 @@ p.no-comments {
 .woocommerce nav.woocommerce-pagination ul li a:focus,
 .woocommerce nav.woocommerce-pagination ul li a:hover,
 .woocommerce nav.woocommerce-pagination ul li span.current {
-	background: $color__yellow__main;
-	color: $black;
+	background: var(--wp--preset--color--silver-blue);
+	color: var(--wp--preset--color--text-primary);
 }
 
 .woocommerce nav.woocommerce-pagination .next.page-numbers,

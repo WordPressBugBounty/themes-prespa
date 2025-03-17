@@ -17,6 +17,18 @@
  * @return void
  */
 function prespa_woocommerce_setup() {
+	add_theme_support(
+		'woocommerce',
+		array(
+			'product_grid'          => array(
+				'default_rows'    => 3,
+				'min_rows'        => 1,
+				'default_columns' => 4,
+				'min_columns'     => 1,
+				'max_columns'     => 6,
+			),
+		)
+	);
 	add_theme_support( 'wc-product-gallery-zoom' );
 	add_theme_support( 'wc-product-gallery-lightbox' );
 	add_theme_support( 'wc-product-gallery-slider' );
