@@ -69,11 +69,11 @@ add_action( 'customize_register', 'prespa_customize_woocommerce_colors', 10 );
 
 function prespa_customize_woocommerce_colors_css() {
 
-	$primary_accent_color   = get_theme_mod( 'primary_accent_color', '#3a72d3' );
-	$secondary_accent_color = get_theme_mod( 'secondary_accent_color', '#ebeefc' );
-	$woo_btn_text_color = get_theme_mod( 'woo_btn_text_color' );
-	$woo_btn_bgr_color  = get_theme_mod( 'woo_btn_bgr_color' );
-	$woo_info_bgr_color = get_theme_mod( 'woo_info_bgr_color' );
+	$primary_accent_color   = prespa_customizer_values( 'primary_accent_color' );
+	$secondary_accent_color = prespa_customizer_values( 'secondary_accent_color' );
+	$woo_btn_text_color     = prespa_customizer_values( 'woo_btn_text_color' );
+	$woo_btn_bgr_color      = prespa_customizer_values( 'woo_btn_bgr_color' );
+	$woo_info_bgr_color     = get_theme_mod( 'woo_info_bgr_color' );
 
 	?>
 	
@@ -122,7 +122,7 @@ function prespa_customize_woocommerce_colors_css() {
 	body:not(.dark-mode).woocommerce-page #payment #place_order,
 	body:not(.dark-mode) .wc-block-cart__submit-button {
 		<?php if ( $woo_btn_bgr_color ) : ?>
-		background: <?php echo esc_attr( $woo_btn_bgr_color );?>!important;
+		background: <?php echo esc_attr( $woo_btn_bgr_color ); ?>!important;
 		<?php endif; ?>
 		<?php if ( $woo_btn_text_color ) : ?>
 		color: <?php echo $woo_btn_text_color; ?>!important;

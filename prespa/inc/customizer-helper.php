@@ -14,10 +14,15 @@
   if ( ! function_exists( 'prespa_customizer_values' ) ) :
 	function prespa_customizer_values( $value ) {
 		$defaults = array(
+			'primary_accent_color' => '#3a72d3',
+			'secondary_accent_color' => '#ebeefc',
+			'body_bgr_color'         => '',
 			'content_layout'     => 'seperate_containers',
 			'header_button_text' => __( 'Contact', 'prespa' ),
 			'has_secondary_menu' => true,
-			'header-menu-position' => 'static'
+			'header-menu-position' => 'static',
+			'woo_btn_bgr_color' => '',
+			'woo_btn_text_color' => '',
 		);
 
 		// Return the value from the theme mod, or fallback to the default

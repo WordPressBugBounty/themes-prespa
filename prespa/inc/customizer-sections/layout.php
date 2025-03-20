@@ -318,7 +318,7 @@ function prespa_customize_css() {
 	$shop_layout          = get_theme_mod( 'shop_page_layout', 'none' );
 	$cursor_layout        = get_theme_mod( 'cursor_layout', 'transparent' );
 
-	$body_bgr_color       = get_theme_mod( 'body_bgr_color' );
+	$body_bgr_color       = prespa_customizer_values( 'body_bgr_color' );
 	?>
 
 <style type="text/css">

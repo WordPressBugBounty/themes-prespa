@@ -61,6 +61,7 @@ function prespa_add_menu() {
 function prespa_settings_page_doc() {
 	// get the settings sections array
 	$theme_data = wp_get_theme();
+	$parent_theme_data = wp_get_theme()->get('Template');
 	?>
 	
 	<div class="nasiothemes-wrapper">
@@ -171,7 +172,7 @@ function prespa_settings_page_doc() {
 							<h3 class="column-title"><span class="nasiothemes-icon dashicons dashicons-cart"></span><span class="nasiothemes-title-text">
 							<?php echo sprintf(
                                 /* translators: Theme name and link to WordPress.org Support forum for the theme */
-                                __( 'Upgrade to %1$s Pro', 'prespa' ), esc_html( $theme_data->name ) )
+                                __( 'Upgrade to %1$s Pro', 'prespa' ), esc_html( wp_get_theme($parent_theme_data)->get('Name') ) )
 							?>
 							</span>
                             </h3>
@@ -250,7 +251,7 @@ function prespa_settings_page_doc() {
 										</td>
 										<td>
 											<span class="dashicons dashicons-yes-alt"></span>
-											<?php esc_html_e( '47', 'prespa' ); ?>
+											<?php esc_html_e( '55', 'prespa' ); ?>
 										</td>
 									</tr>
 									<tr>

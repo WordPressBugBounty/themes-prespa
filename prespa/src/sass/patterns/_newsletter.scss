@@ -48,8 +48,9 @@
 
 .newsletter-pattern .lines {
 	width: 1.6rem;
-	height: 0.0625rem;
+	height: .125rem;
 	background-color: white;
+	color: white;
 	position: absolute;
 	margin: 0 auto;
 	top: 1.2rem;
@@ -57,14 +58,6 @@
 	right: 0;
 	transition: 0.5s;
 	opacity: 0;
-}
-
-.newsletter-pattern .lines small {
-	color: white;
-}
-
-.newsletter-pattern .lines::before {
-	top: 1rem;
 }
 
 .newsletter-pattern .lines::before {
@@ -75,20 +68,19 @@
 .newsletter-pattern .lines::after {
 	content: "";
 	width: 1.6rem;
-	height: 0.0625rem;
+	height: .125rem;
 	background-color: white;
 	position: absolute;
 	margin: 0 auto;
 	left: 0;
 	right: 0;
-	transition: 0.4s;
 }
 
 @keyframes prespa_lines_move {
 
 	0% {
 		opacity: 0;
-		transform: translateX(-20px);
+		transform: translateX(-1rem);
 	}
 
 	100% {
@@ -97,7 +89,7 @@
 	}
 }
 
-@media (max-width: 781) {
+@media (max-width: 781px) {
 	.newsletter-pattern {
 
 		img {

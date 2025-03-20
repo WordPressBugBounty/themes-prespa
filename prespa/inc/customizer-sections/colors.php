@@ -217,13 +217,13 @@ if ( ! function_exists( 'prespa_customize_colors_css' ) ) :
 	function prespa_customize_colors_css() {
 
 		$body_text_color          = get_theme_mod( 'body_text_color' );
-		$body_bgr_color           = get_theme_mod( 'body_bgr_color' );
+		$body_bgr_color           = prespa_customizer_values( 'body_bgr_color' );
 		$headings_text_color      = get_theme_mod( 'headings_text_color', '#404040' );
 		$link_headings_text_color = get_theme_mod( 'link_headings_text_color', '#404040' );
 		$links_text_color         = get_theme_mod( 'links_text_color' );
 		$buttons_bgr_color        = get_theme_mod( 'buttons_bgr_color' );
-		$primary_accent_color     = get_theme_mod( 'primary_accent_color', '#3a72d3' );
-		$secondary_accent_color   = get_theme_mod( 'secondary_accent_color', '#ebeefc' );
+		$primary_accent_color     = prespa_customizer_values( 'primary_accent_color' );
+		$secondary_accent_color   = prespa_customizer_values( 'secondary_accent_color' );
 
 		?>
 		
