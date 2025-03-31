@@ -31,15 +31,20 @@ export function articlesInViewport() {
 // for block patterns in viewport, run the animation on page load for better ui
 export function blocksInViewport() {
 	const allElements = document.querySelectorAll(
-		'[class^="p-animation"],[class*=" p-animation"], .hero-pattern .wp-block-columns'
+		'[class^="p-animation"],[class*=" p-animation"]'
 	);
 	for ( let i = 0; i < allElements.length; i++ ) {
 		if ( isInViewport( allElements[ i ] ) ) {
 			allElements[ i ].className += ' animated';
 		}
 	}
-	if ( document.querySelector( '.hero-pattern .wp-block-columns' ) ) {
-		document.querySelector( '.hero-pattern .wp-block-columns' ).classList.add( 'animated' );
+	// customizer preview fix
+	const previewedElements = document.querySelectorAll(
+		'.hero-pattern .wp-block-columns, .header-pattern .wp-block-columns'
+	);
+
+	for ( let i = 0; i < previewedElements.length; i++ ) {
+		previewedElements[ i ].classList.add( 'animated' );
 	}
 	runStatsAnimation();
 }
