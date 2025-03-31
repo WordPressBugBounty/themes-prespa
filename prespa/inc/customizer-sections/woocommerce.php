@@ -102,30 +102,22 @@ function prespa_customize_woocommerce_colors_css() {
 	body:not(.dark-mode) .single_add_to_cart_button,
 	body:not(.dark-mode) button.alt.single_add_to_cart_button:hover,
 	body:not(.dark-mode) .checkout-button,
-	body:not(.dark-mode).woocommerce-page .button,
-	body:not(.dark-mode).woocommerce #respond input#submit,
-	body:not(.dark-mode).woocommerce-page #payment #place_order,
-	body:not(.dark-mode) .wc-block-cart__submit-button {
-	<?php if ( ! $woo_btn_bgr_color ) : ?>
-		background: <?php echo esc_attr( $secondary_accent_color ); ?>;
-	<?php endif; ?>
-	<?php if ( ! $woo_btn_text_color ) : ?>
-		color: var(--wp--preset--color--text-primary);
-	<?php endif; ?>
-	}
-
-	body:not(.dark-mode) .add_to_cart_button,
-	body:not(.dark-mode) .single_add_to_cart_button,
-	body:not(.dark-mode) .checkout-button,
+	body:not(.dark-mode) .checkout-button.alt:hover,
 	body:not(.dark-mode).woocommerce-page .button,
 	body:not(.dark-mode).woocommerce-page #respond input#submit,
 	body:not(.dark-mode).woocommerce-page #payment #place_order,
-	body:not(.dark-mode) .wc-block-cart__submit-button {
+	body:not(.dark-mode) .wc-block-cart__submit-button,
+	body:not(.dark-mode) .wc-block-components-checkout-place-order-button {
 		<?php if ( $woo_btn_bgr_color ) : ?>
-		background: <?php echo esc_attr( $woo_btn_bgr_color ); ?>!important;
+			background: <?php echo esc_attr( $woo_btn_bgr_color ); ?> !important;
+		<?php else : ?>
+			background: <?php echo esc_attr( $secondary_accent_color ); ?>;
 		<?php endif; ?>
+
 		<?php if ( $woo_btn_text_color ) : ?>
-		color: <?php echo $woo_btn_text_color; ?>!important;
+			color: <?php echo esc_attr( $woo_btn_text_color ); ?> !important;
+		<?php else : ?>
+			color: var(--wp--preset--color--text-primary);
 		<?php endif; ?>
 	}
 	

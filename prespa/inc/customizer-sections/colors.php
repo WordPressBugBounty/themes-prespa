@@ -218,8 +218,8 @@ if ( ! function_exists( 'prespa_customize_colors_css' ) ) :
 
 		$body_text_color          = get_theme_mod( 'body_text_color' );
 		$body_bgr_color           = prespa_customizer_values( 'body_bgr_color' );
-		$headings_text_color      = get_theme_mod( 'headings_text_color', '#404040' );
-		$link_headings_text_color = get_theme_mod( 'link_headings_text_color', '#404040' );
+		$headings_text_color      = prespa_customizer_values( 'headings_text_color' );
+		$link_headings_text_color = prespa_customizer_values( 'link_headings_text_color' );
 		$links_text_color         = get_theme_mod( 'links_text_color' );
 		$buttons_bgr_color        = get_theme_mod( 'buttons_bgr_color' );
 		$primary_accent_color     = prespa_customizer_values( 'primary_accent_color' );
@@ -259,8 +259,7 @@ if ( ! function_exists( 'prespa_customize_colors_css' ) ) :
 		body:not(.dark-mode) input[type="button"], 
 		body:not(.dark-mode) input[type="reset"], 
 		body:not(.dark-mode) [type="submit"],
-		.wp-block-button > .slider-button,
-		.prespa-featured-products-wrapper .button {
+		.wp-block-button > .slider-button {
 			background-color: <?php echo $buttons_bgr_color ? esc_attr( $buttons_bgr_color ) : esc_attr( $primary_accent_color ); ?>;
 		}
 

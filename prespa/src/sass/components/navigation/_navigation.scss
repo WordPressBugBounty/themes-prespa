@@ -377,6 +377,10 @@
 		padding: 0.75rem 1rem;
 	}
 
+	.main-navigation li:last-child a:not(.wp-element-button) {
+		padding-right: .5rem;
+	}
+
 	.main-navigation ul ul a {
 		padding: 0.875rem 1rem;
 	}

@@ -8,25 +8,27 @@
  */
 
  /**
-  * Customizer values
-  * The defaults can be modified by a child theme
+  * Customizer defaults
+  * These default values can be modified by a child theme
   */
-  if ( ! function_exists( 'prespa_customizer_values' ) ) :
+if ( ! function_exists( 'prespa_customizer_values' ) ) :
 	function prespa_customizer_values( $value ) {
 		$defaults = array(
-			'primary_accent_color' => '#3a72d3',
-			'secondary_accent_color' => '#ebeefc',
-			'body_bgr_color'         => '',
-			'content_layout'     => 'seperate_containers',
-			'header_button_text' => __( 'Contact', 'prespa' ),
-			'has_secondary_menu' => true,
-			'header-menu-position' => 'static',
-			'woo_btn_bgr_color' => '',
-			'woo_btn_text_color' => '',
+			'primary_accent_color'     => '#3a72d3',
+			'secondary_accent_color'   => '#ebeefc',
+			'body_bgr_color'           => '',
+			'headings_text_color'      => '#404040',
+			'link_headings_text_color' => '#404040',
+			'content_layout'           => 'seperate_containers',
+			'header_button_text'       => __( 'Contact', 'prespa' ),
+			'has_secondary_menu'       => true,
+			'header-menu-position'     => 'static',
+			'woo_btn_bgr_color'        => '',
+			'woo_btn_text_color'       => '',
 		);
 
 		// Return the value from the theme mod, or fallback to the default
-		return get_theme_mod( $value, $defaults[$value]);
+		return get_theme_mod( $value, $defaults[ $value ] );
 	}
 endif;
 
@@ -40,7 +42,7 @@ endif;
   * @since 1.0.0
   */
 
-  function prespa_brightness( $hex, $steps ) {
+function prespa_brightness( $hex, $steps ) {
 
 	$steps = max( -255, min( 255, $steps ) );
 
@@ -72,7 +74,7 @@ endif;
  * @since 1.1.2
  */
 
- function prespa_hex_to_rgba( $hex, $alpha = false ) {
+function prespa_hex_to_rgba( $hex, $alpha = false ) {
 	$hex      = str_replace( '#', '', $hex );
 	$length   = strlen( $hex );
 	$rgb['r'] = hexdec( $length == 6 ? substr( $hex, 0, 2 ) : ( $length == 3 ? str_repeat( substr( $hex, 0, 1 ), 2 ) : 0 ) );
@@ -107,11 +109,11 @@ function prespa_is_fixed_header() {
 }
 
 function prespa_is_sticky_header() {
-	return prespa_customizer_values( 'header-menu-position' )  == 'sticky';
+	return prespa_customizer_values( 'header-menu-position' ) == 'sticky';
 }
 
 function prespa_is_static_header() {
-	return prespa_customizer_values( 'header-menu-position' )  == 'static';
+	return prespa_customizer_values( 'header-menu-position' ) == 'static';
 }
 
 function prespa_has_multicolumn_layout() {
@@ -122,33 +124,33 @@ function prespa_topmenu_has_wc_items() {
 	return ( get_theme_mod( 'has_wc_icons', 1 ) == 1 && class_exists( 'WooCommerce' ) );
 }
 
-function prespa_has_categories_enabled( ) {
+function prespa_has_categories_enabled() {
 	return get_theme_mod( 'prespa_categories_section_enable', true );
 }
 
 function prespa_has_one_column_layout() {
-	return get_theme_mod( 'post_archives_columns' , '1' ) == '1';
+	return get_theme_mod( 'post_archives_columns', '1' ) == '1';
 }
 
 /**
  * Featured image position
  */
 
- function prespa_has_fullwidth_featured_image() {
-	return is_single() && has_post_thumbnail( ) ? get_theme_mod( 'featured_image_display', '2' ) == '1' : true;
- }
+function prespa_has_fullwidth_featured_image() {
+	return is_single() && has_post_thumbnail() ? get_theme_mod( 'featured_image_display', '2' ) == '1' : true;
+}
 
 
 /**
  * Determine if post content should be full-width layout
  */
 
- function prespa_is_page_fullwidth() {
+function prespa_is_page_fullwidth() {
 	return get_theme_mod( 'page_layout', 'none' ) == 'none' && 'page' == get_post_type();
 }
 
 function prespa_is_post_fullwidth() {
-	return class_exists( 'WooCommerce' ) && ( is_shop() || is_product() ) ?  get_theme_mod( 'shop_page_layout', 'right' ) == 'none' : get_theme_mod( 'post_layout', 'right' ) == 'none' && is_single() ;
+	return class_exists( 'WooCommerce' ) && ( is_shop() || is_product() ) ? get_theme_mod( 'shop_page_layout', 'right' ) == 'none' : get_theme_mod( 'post_layout', 'right' ) == 'none' && is_single();
 }
 
 function prespa_is_post_archives_fullwidth() {

@@ -348,7 +348,7 @@ function prespa_customize_css() {
 	body:not(.page):not(.single) .hentry:hover {
 		box-shadow: var(--p-box-shadow-hover);
 	}
-	<?php if ( !$body_bgr_color ) : ?>
+	<?php if ( ! $body_bgr_color ) : ?>
 	body:not(.dark-mode) {
 		background-color: #f7f8f9
 	}
@@ -390,9 +390,6 @@ function prespa_customize_css() {
 	}
 	body:not(.dark-mode) {
 		background-color: #f7f8f9
-	}
-	body:not(.dark-mode) .main-navigation-container {
-		background-color: #fff;
 	}
 
 	body:not(.dark-mode) .hentry, 

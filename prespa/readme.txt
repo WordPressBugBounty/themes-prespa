@@ -5,7 +5,7 @@ Tags: blog, news, e-commerce, one-column, two-columns, three-columns, four-colum
 Requires at least: 6.1
 Tested up to: 6.7
 Requires PHP: 5.6
-Stable tag: 1.5.8
+Stable tag: 1.5.9
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -41,6 +41,9 @@ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
 GNU General Public License for more details.
 
 == Changelog ==
+
+= 1.5.9 - March 2025 =
+* Code cleanup
 
 = 1.5.8 - March 2025 =
 * Abstract customizer settings
@@ -215,15 +218,15 @@ Fix translation functions
 
 == Resources ==
 SVG Icons by Feather Icons https://github.com/feathericons/feather, Copyright (c) 2013-2017 Cole Bemis, License [MIT](https://opensource.org/licenses/MIT)
-SVG Icons by Ana Stoyanova https://anast.design/, Copyright (c) 2023 Ana Stoyanova, License [CC-BY](https://creativecommons.org/licenses/by/4.0/)
+SVG Icons by Ana Stoyanova https://anast.art/, Copyright (c) 2023 Ana Stoyanova, License [CC-BY](https://creativecommons.org/licenses/by/4.0/)
 
 Open Sans Google font by Steve Mateson https://fonts.google.com/specimen/Open+Sans/, License [SIL Open Font License](https://opensource.org/license/openfont-html/)
 Montserrat Google font by Julieta Ulanovsky https://fonts.google.com/specimen/Montserrat/, License [SIL Open Font License](https://opensource.org/license/openfont-html/)
 Raleway Google font by Matt McInerney, Pablo Impallari and Rodrigo Fuenzalida https://fonts.google.com/specimen/Raleway/, License [SIL Open Font License](https://opensource.org/license/openfont-html/)
 
-Header Pattern Illustration by Ana Stoyanova https://anast.design/, Copyright (c) 2023 Ana Stoyanova, License [CC-BY](https://creativecommons.org/licenses/by/4.0/)
-Case Studies Pattern Illustrations by Ana Stoyanova https://anast.design/, Copyright (c) 2023 Ana Stoyanova, License [CC-BY](https://creativecommons.org/licenses/by/4.0/)
-404 Not Found IIllustration by Ana Stoyanova https://anast.design/, Copyright (c) 2023 Ana Stoyanova, License [CC-BY](https://creativecommons.org/licenses/by/4.0/)
+Header Pattern Illustration by Ana Stoyanova https://anast.art/, Copyright (c) 2023 Ana Stoyanova, License [CC-BY](https://creativecommons.org/licenses/by/4.0/)
+Case Studies Pattern Illustrations by Ana Stoyanova https://anast.art/, Copyright (c) 2023 Ana Stoyanova, License [CC-BY](https://creativecommons.org/licenses/by/4.0/)
+404 Not Found IIllustration by Ana Stoyanova https://anast.art/, Copyright (c) 2023 Ana Stoyanova, License [CC-BY](https://creativecommons.org/licenses/by/4.0/)
 
 Block Pattern service one photo by PxHere https://pxhere.com/en/photo/1434695, License [CC0](https://creativecommons.org/publicdomain/zero/1.0/)
 Block Pattern service two photo by PxHere https://pxhere.com/en/photo/723651, License [CC0](https://creativecommons.org/publicdomain/zero/1.0/)
