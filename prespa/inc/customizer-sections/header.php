@@ -361,8 +361,10 @@ add_action( 'customize_register', 'prespa_register_header_customizer' );
 if ( ! function_exists( 'prespa_customize_header_menu_options' ) ) :
 	function prespa_customize_header_menu_options() {
 
+		$header_text_color = get_header_textcolor();
+
 		// get menu colors
-		$header_text_color = get_theme_mod( 'prespa_header_text_color', '#000' );
+		$menu_text_color = get_theme_mod( 'prespa_header_text_color', '#000' );
 
 		// static vs sticky header
 		$header_menu_position = prespa_customizer_values( 'header-menu-position' );
@@ -474,9 +476,9 @@ if ( ! function_exists( 'prespa_customize_header_menu_options' ) ) :
 		if ( $header_menu_position == 'static' ) :  // static header
 
 			?>
-		.site-header a,
+		.site-title a,
 		.site-description {
-			color: <?php echo esc_attr( $header_text_color ); ?>;
+			color: #<?php echo esc_attr( $header_text_color ); ?>;
 		}
 		.top-menu {
 			background: <?php echo esc_attr( $top_menu_bgr_color ); ?>;
@@ -501,12 +503,15 @@ if ( ! function_exists( 'prespa_customize_header_menu_options' ) ) :
 
 		.main-navigation a,
 		.main-navigation button {
-			color: <?php echo esc_attr( $header_text_color ); ?>;
+			color: <?php echo esc_attr( $menu_text_color ); ?>;
 		}
 		
 		<?php else : // sticky header
 
 			?>
+		.site-title a, .site-description {
+			color: #<?php echo esc_attr( $header_text_color ); ?>;
+		}
 		.main-navigation-container {
 			background: transparent;
 			z-index: 1000;
@@ -514,10 +519,6 @@ if ( ! function_exists( 'prespa_customize_header_menu_options' ) ) :
 
 		.main-navigation-container.fixed-header {
 			background-color: var(--wp--preset--color--bgr);
-		}
-
-		.site-title a, body p.site-description {
-			color: <?php echo esc_attr( $header_text_color ); ?>;
 		}
 
 		.top-menu {
@@ -542,7 +543,7 @@ if ( ! function_exists( 'prespa_customize_header_menu_options' ) ) :
 			}
 			.main-navigation a,
 			.main-navigation button {
-				color: <?php echo esc_attr( $header_text_color ); ?>;
+				color: <?php echo esc_attr( $menu_text_color ); ?>;
 			}
 		}
 
