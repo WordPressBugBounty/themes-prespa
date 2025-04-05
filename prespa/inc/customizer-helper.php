@@ -140,11 +140,9 @@ function prespa_has_one_column_layout() {
 
  if ( ! function_exists( 'prespa_has_fullwidth_featured_image' ) ) :
 	function prespa_has_fullwidth_featured_image() {
-		return is_singular( array( 'post', 'page' ) ) && has_post_thumbnail()
-			? get_theme_mod( 'featured_image_display', '2' ) == '1' : false;
+		return 'post' === get_post_type() && has_post_thumbnail() ? get_theme_mod( 'featured_image_display', '2' ) == '1' : is_singular( array( 'post', 'page' ) );
 	}
 endif;
-
 
 /**
  * Determine if post content should be full-width layout
