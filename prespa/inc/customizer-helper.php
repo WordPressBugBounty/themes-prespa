@@ -134,11 +134,16 @@ function prespa_has_one_column_layout() {
 
 /**
  * Featured image position
+ * @since version 1.6.3 the fullwidth header works only for posts and pages
+ * To add support for custom post types - extend the function via a child theme
  */
 
-function prespa_has_fullwidth_featured_image() {
-	return is_single() && has_post_thumbnail() ? get_theme_mod( 'featured_image_display', '2' ) == '1' : true;
-}
+ if ( ! function_exists( 'prespa_has_fullwidth_featured_image' ) ) :
+	function prespa_has_fullwidth_featured_image() {
+		return is_singular( array( 'post', 'page' ) ) && has_post_thumbnail()
+			? get_theme_mod( 'featured_image_display', '2' ) == '1' : false;
+	}
+endif;
 
 
 /**

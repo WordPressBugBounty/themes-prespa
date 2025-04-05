@@ -35,10 +35,10 @@
  
 .p-animation-text-transform.animated {
 	animation-duration: .8s;
-	opacity: 0.75;
+	opacity: 0.25;
 	animation-timing-function: ease-in-out;
 	animation-fill-mode: forwards;
-	transform: perspective(2000px) rotateX(12deg);
+	transform: perspective(2000px) rotateX(18deg);
 	animation-name: prespa_text_transform;
 }
 
@@ -253,7 +253,7 @@ Button Hover Animations
 	.p-btn-animation-slide-in {
 
 		a {
-			background-image: linear-gradient(to right, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.25) 100%) !important;
+			background-image: linear-gradient(to right, rgba(0, 0, 0, 0.05) 0%, rgba(0, 0, 0, 0.15) 100%) !important;
 			background-size: 0 100%;
 			background-repeat: no-repeat;
 			background-position: left 100%;
@@ -325,7 +325,7 @@ Button Hover Animations
 @keyframes prespa_text_transform {
 
 	0% {
-		opacity: 0.75;
+		opacity: 0.25;
 	}
 
 	100% {

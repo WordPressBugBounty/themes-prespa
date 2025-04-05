@@ -5,7 +5,7 @@ Tags: blog, news, e-commerce, one-column, two-columns, three-columns, four-colum
 Requires at least: 6.1
 Tested up to: 6.7
 Requires PHP: 5.6
-Stable tag: 1.6.2
+Stable tag: 1.6.3
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -42,7 +42,10 @@ GNU General Public License for more details.
 
 == Changelog ==
 
-= 1.6.1 - April 2025 =
+= 1.6.3 - April 2025 =
+* Make sure the fullwidth featured image option affects only posts and pages and can be easily extendable.
+
+= 1.6.2 - April 2025 =
 * Change x-large size default on mobile
 
 = 1.6.1 - April 2025 =
