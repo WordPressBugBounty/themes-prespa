@@ -17,7 +17,7 @@ export default function themeOptions() {
 	window.addEventListener( 'scroll', debounce( postLoopAnimation, 15 ) );
 	window.addEventListener( 'scroll', debounce( blocksAnimation, 15 ) );
 	window.addEventListener( 'scroll', debounce( fixedItems, 100 ) );
-	window.addEventListener( 'scroll', debounce( runStatsAnimation, 150 ) );
+	window.addEventListener( 'scroll', debounce( runStatsAnimation, 10 ) );
 	stickyHeader();
 	darkMode();
 	backToTop();

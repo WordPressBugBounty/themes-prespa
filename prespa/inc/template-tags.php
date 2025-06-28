@@ -368,17 +368,19 @@ add_filter( 'nav_menu_item_args', 'prespa_add_sub_toggles_to_main_menu', 10, 3 )
 
 /* Primary Menu */
 
-function prespa_primary_menu_dark_mode_markup() {
-	$isDarkMode = get_theme_mod( 'enable_dark_mode', 1 ) == 1;
+if ( ! function_exists( 'prespa_primary_menu_dark_mode_markup' ) ) :
+	function prespa_primary_menu_dark_mode_markup() {
+		$isDarkMode = get_theme_mod( 'enable_dark_mode', 1 ) == 1;
 
-	if ( $isDarkMode ) :
-		?>
-		<li class="dark-mode-menu-item">
-		<?php prespa_dark_mode_button_markup(); ?>
-		</li>
-		<?php
-	endif;
-}
+		if ( $isDarkMode ) :
+			?>
+			<li class="dark-mode-menu-item">
+			<?php prespa_dark_mode_button_markup(); ?>
+			</li>
+			<?php
+		endif;
+	}
+endif;
 
 /**
  * Top Bar Menu

@@ -305,6 +305,17 @@ Button Hover Animations
 		box-shadow: none;
 	}
 
+	.p-btn-animation-hover-arrow .wp-block-button__link::after{
+		transition: .3s ease-in-out;
+		opacity: 0;
+		content: ">";
+	}
+
+	.p-btn-animation-hover-arrow .wp-block-button__link:hover::after {
+		opacity: 1;
+		padding-left: .375rem;
+	}
+
 }
 
 /* Block Pattern keyframes */
