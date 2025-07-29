@@ -5,7 +5,7 @@ Tags: blog, news, e-commerce, one-column, two-columns, three-columns, four-colum
 Requires at least: 6.1
 Tested up to: 6.8
 Requires PHP: 5.6
-Stable tag: 1.6.5
+Stable tag: 1.6.6
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -41,6 +41,9 @@ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
 GNU General Public License for more details.
 
 == Changelog ==
+
+= 1.6.6 - July 2025 =
+* Add telegram social icon
 
 = 1.6.5 - June 2025 =
 * Add btn hover arrow animation and improve runStatsCounter

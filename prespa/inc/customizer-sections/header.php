@@ -343,6 +343,7 @@ function prespa_register_header_customizer( $wp_customize ) {
 					esc_html__( 'Pinterest', 'prespa' )  => prespa_get_svg( 'pinterest' ),
 					esc_html__( 'Snapchat', 'prespa' )   => prespa_get_svg( 'snapchat' ),
 					esc_html__( 'Soundcloud', 'prespa' ) => prespa_get_svg( 'soundcloud' ),
+					esc_html__( 'Telegram', 'prespa' )   => prespa_get_svg( 'telegram' ),
 					esc_html__( 'Tiktok', 'prespa' )     => prespa_get_svg( 'tiktok' ),
 					esc_html__( 'Tumblr', 'prespa' )     => prespa_get_svg( 'tumblr' ),
 					esc_html__( 'Twitch', 'prespa' )     => prespa_get_svg( 'twitch' ),

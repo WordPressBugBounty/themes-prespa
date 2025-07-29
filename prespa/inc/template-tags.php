@@ -476,6 +476,10 @@ function prespa_social_icons( $social_urls ) {
 		$domain_name = str_ireplace( 'www.', '', parse_url( $url, PHP_URL_HOST ) );
 		$domain      = explode( '.', $domain_name )[0];
 		/* translators: %s: domain name, i.e. facebook. */
+
+		if ( strtolower( $domain_name ) === 't.me' ) {
+			$domain = 'telegram';
+		}
 		?>
 		<li class="social-icon">
 			<a href="<?php echo esc_url( $url ); ?>" aria-label="<?php printf( esc_attr__( '%s', 'prespa' ), $domain ); ?>">
@@ -519,6 +523,9 @@ function prespa_social_icons( $social_urls ) {
 				break;
 			case 'snapchat':
 				echo wp_kses( prespa_get_svg( 'snapchat' ), prespa_get_kses_extended_ruleset() );
+				break;
+			case 'telegram':
+				echo wp_kses( prespa_get_svg( 'telegram' ), prespa_get_kses_extended_ruleset() );
 				break;
 			case 'tiktok':
 				echo wp_kses( prespa_get_svg( 'tiktok' ), prespa_get_kses_extended_ruleset() );

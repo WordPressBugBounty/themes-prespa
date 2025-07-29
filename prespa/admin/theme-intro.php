@@ -251,7 +251,7 @@ function prespa_settings_page_doc() {
 										</td>
 										<td>
 											<span class="dashicons dashicons-yes-alt"></span>
-											<?php esc_html_e( '55', 'prespa' ); ?>
+											<?php esc_html_e( '63', 'prespa' ); ?>
 										</td>
 									</tr>
 									<tr>

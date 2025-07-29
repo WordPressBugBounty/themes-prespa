@@ -12,6 +12,13 @@
 	justify-content: space-between;
 }
 
+/* Safari mobile fix */
+@supports (-webkit-touch-callout: none) {
+	.header-image-wrapper {
+		background-attachment: scroll !important;
+	}
+}
+
 .main-navigation-container {
 	border-bottom: 1px solid var(--p-line-light);
   }
