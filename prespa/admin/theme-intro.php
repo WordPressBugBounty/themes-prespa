@@ -9,14 +9,14 @@ if ( ! defined( 'PRESPA_PAGE_BASENAME' ) ) {
 if ( ! defined( 'PRESPA_THEME_DETAILS' ) ) {
 	define( 'PRESPA_THEME_DETAILS', 'https://nasiothemes.com/themes/prespa/' );
 }
+if ( ! defined( 'PRESPA_THEME_LOGO_URL' ) ) {
+	define( 'PRESPA_THEME_LOGO_URL', get_template_directory_uri() . '/admin/img/theme-logo.jpg' );
+}
 if ( ! defined( 'PRESPA_THEME_DEMO' ) ) {
 	define( 'PRESPA_THEME_DEMO', 'https://prespa-demo.nasiothemes.com/' );
 }
 if ( ! defined( 'PRESPA_THEME_OPTIONS' ) ) {
 	define( 'PRESPA_THEME_OPTIONS', esc_url ( admin_url( '/customize.php' ) ) );
-}
-if ( ! defined( 'PRESPA_THEME_VIDEO_GUIDE' ) ) {
-	define( 'PRESPA_THEME_VIDEO_GUIDE', 'https://www.youtube.com/watch?v=-fwW9z3Pjbs' );
 }
 if ( ! defined( 'PRESPA_THEME_FEATURES' ) ) {
 	define( 'PRESPA_THEME_FEATURES', 'https://nasiothemes.com/themes/prespa/#features' );
@@ -68,9 +68,9 @@ function prespa_settings_page_doc() {
 		<div class="nasiothemes-header">
 			<div id="nasiothemes-theme-info">
 				<div class="nasiothemes-message-image">
-					<img class="nasiothemes-screenshot" src="
-					<?php echo esc_url( get_template_directory_uri() ); ?>/admin/img/theme-logo.jpg" alt="
-					<?php esc_attr_e( 'Prespa Theme Screenshot', 'prespa' ); ?>" />
+					<img class="nasiothemes-screenshot" 
+						src="<?php echo esc_url( PRESPA_THEME_LOGO_URL ); ?>" 
+						alt="<?php esc_attr_e( 'Prespa Theme Screenshot', 'prespa' ); ?>" />
 				</div><!-- ws fix
 				--><p>
 						<?php
@@ -89,6 +89,12 @@ function prespa_settings_page_doc() {
 						<a class="button button-primary" href="<?php echo esc_url( PRESPA_THEME_OPTIONS ); ?>" rel="noopener" target="_blank">
 							<?php esc_html_e( 'Theme Options', 'prespa' ); ?>
 						</a>
+						<?php if ( defined( 'PRESPA_THEME_VIDEO_GUIDE' ) ) : ?>
+						<a class="button button-primary nasiothemes-button nasiothemes-button-youtube" href="<?php echo esc_url( PRESPA_THEME_VIDEO_GUIDE ); ?>" rel="noopener" target="_blank">
+							<span class="dashicons dashicons-youtube"></span>
+							<?php esc_html_e( 'Video Guide', 'prespa' ); ?>
+						</a>
+						<?php endif; ?>
 					</p>
 			</div><!-- .nasiothemes-header -->
 		
@@ -134,7 +140,7 @@ function prespa_settings_page_doc() {
 								<p><i><?php esc_html_e( 'Please navigate to Appearance => Customize and customize the theme to taste.', 'prespa' ); ?></i></p>
 								<br>
 								<strong><?php esc_html_e( '2. Can I add demo content for an easier start with the theme?', 'prespa' ); ?></strong>
-								<p><i><?php esc_html_e( 'Yes, in the pro version of the theme, there is a demo import button that does all the heavy lifting for you. You can choose between 9 different demos. If you are using the free version, you can take advantage of the block patterns that are included in this theme.', 'prespa' ); ?></i></p>
+								<p><i><?php esc_html_e( 'Yes, in the pro version of the theme, there is a demo import button that does all the heavy lifting for you. You can choose between 12 different demos. If you are using the free version, you can take advantage of the block patterns that are included in this theme.', 'prespa' ); ?></i></p>
 								<br>
 								<strong><?php esc_html_e( '3. Where are the custom block patterns?', 'prespa' ); ?></strong>
 								<p><i><?php esc_html_e( 'In the WordPress admin, create or edit a page, then click on the plus icon in the top left corner of the Gutenberg editor. From there, navigate to the "Patterns" tab and select "Prespa" from the pattern dropdown.', 'prespa' ); ?></i></p>
@@ -231,7 +237,7 @@ function prespa_settings_page_doc() {
 												<?php esc_html_e( 'One Click Demo Import', 'prespa' );?>
 										</td>
 										<td><span class="dashicons dashicons-minus"></span></td>
-										<td><span class="dashicons dashicons-yes-alt"></span> <strong><?php esc_html_e('10 Demo templates','prespa'); ?></strong</td>
+										<td><span class="dashicons dashicons-yes-alt"></span> <strong><?php esc_html_e('12 Demo templates','prespa'); ?></strong</td>
 									</tr>
 									<tr>
 										<td><div class="nasio-tooltip"><span class="dashicons dashicons-editor-help"></span><span class="nasio-tooltiptext">

@@ -111,7 +111,7 @@ msgid "2. Can I add demo content for an easier start with the theme?"
 msgstr ""
 
 #: admin/theme-intro.php:137
-msgid "Yes, in the pro version of the theme, there is a demo import button that does all the heavy lifting for you. You can choose between 9 different demos. If you are using the free version, you can take advantage of the block patterns that are included in this theme."
+msgid "Yes, in the pro version of the theme, there is a demo import button that does all the heavy lifting for you. You can choose between 12 different demos. If you are using the free version, you can take advantage of the block patterns that are included in this theme."
 msgstr ""
 
 #: admin/theme-intro.php:139
@@ -190,7 +190,7 @@ msgid "One Click Demo Import"
 msgstr ""
 
 #: admin/theme-intro.php:234
-msgid "10 Demo templates"
+msgid "12 Demo templates"
 msgstr ""
 
 #: admin/theme-intro.php:238
