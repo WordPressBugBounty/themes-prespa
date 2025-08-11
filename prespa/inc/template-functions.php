@@ -258,6 +258,8 @@ function prespa_get_kses_extended_ruleset() {
 		'rect'     => array(
 			'x'      => true,
 			'y'      => true,
+			'rx'     => true,
+			'ry'     => true,
 			'width'  => true,
 			'height' => true,
 		),
@@ -510,9 +512,10 @@ function prespa_change_logo_class( $html ) {
 add_filter( 'get_custom_logo', 'prespa_change_logo_class' );
 
 /**
- * 
+ *
  * Prespa theme logo
- * Replaces and updates prespa_dark_mode_logo() 
+ * Replaces and updates prespa_dark_mode_logo()
+ *
  * @since v.1.5.3
  */
 
