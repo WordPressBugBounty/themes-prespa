@@ -440,12 +440,22 @@
 		padding-right: 0;
 	}
 
+	.call-to-action {
+		margin-left: 1rem;
+	}
+
 	.call-to-action a {
 		margin-top: .25rem !important;
     	padding: .5rem 1rem;
 		font-weight: bold;
 	}
 
+}
+
+@media(max-width:54rem){
+	.call-to-action a {
+		border: 1px solid #fff;
+	}
 }
 
 //Sticky header Animation

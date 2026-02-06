@@ -26,8 +26,8 @@
 <div class="wp-block-button p-btn-animation-border-move"><a class="wp-block-button__link has-white-color has-text-color wp-element-button"><?php esc_html_e( 'Download', 'prespa' )?> </a></div>
 <!-- /wp:button -->
 
-<!-- wp:button {"className":"is-style-outline p-btn-animation-border-move"} -->
-<div class="wp-block-button is-style-outline p-btn-animation-border-move"><a class="wp-block-button__link wp-element-button"><?php esc_html_e( 'Learn More', 'prespa' )?> </a></div>
+<!-- wp:button {"textColor":"text-primary","className":"is-style-outline p-btn-animation-border-move","style":{"elements":{"link":{"color":{"text":"var:preset|color|text-primary"}}}}} -->
+<div class="wp-block-button is-style-outline p-btn-animation-border-move"><a class="wp-block-button__link has-text-primary-color has-text-color has-link-color wp-element-button">Learn More </a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
 <!-- /wp:column -->

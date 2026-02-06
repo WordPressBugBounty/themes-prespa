@@ -100,6 +100,13 @@ if ( ! function_exists( 'prespa_setup' ) ) :
 		update_option( 'image_default_align', 'center' );
 		update_option( 'image_default_size', 'large' );
 
+		/**
+		 * Add support for editor styles.
+		 * 
+		 * @since 1.7.3
+		 */
+		add_theme_support( 'editor-styles' );
+
 	}
 endif;
 add_action( 'after_setup_theme', 'prespa_setup' );

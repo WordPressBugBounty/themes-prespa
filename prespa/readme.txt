@@ -3,9 +3,9 @@
 Contributors: nravota12
 Tags: blog, news, e-commerce, one-column, two-columns, three-columns, four-columns, grid-layout, right-sidebar, left-sidebar, block-patterns, wide-blocks, custom-colors, custom-header, custom-logo, custom-menu, featured-image-header, featured-images, footer-widgets, full-width-template, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready
 Requires at least: 6.1
-Tested up to: 6.8
+Tested up to: 6.9
 Requires PHP: 5.6
-Stable tag: 1.6.8
+Stable tag: 1.7.5
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -41,6 +41,27 @@ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
 GNU General Public License for more details.
 
 == Changelog ==
+
+= 1.7.5 - January 2026 =
+* Improve button arrow hover animation
+
+= 1.7.4 - January 2026 =
+* Fix button background color in theme customizer
+
+= 1.7.3 - January 2026 =
+* Add support for editor styles
+
+= 1.7.2 - January 2026 =
+* Improve call to action button
+
+= 1.7.1 - November 2025 =
+* Fix site wrapper bottom padding
+
+= 1.7.0 - October 2025 =
+* Fix contact us pattern
+
+= 1.6.9 - October 2025 =
+* Fix non-latin characters display inside prespa_posted_in function
 
 = 1.6.8 - August 2025 =
 * Update svg icons

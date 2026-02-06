@@ -87,7 +87,7 @@ if ( ! function_exists( 'prespa_posted_in' ) ) :
 			if ( ( $categories_list ) ) {
 				/* translators: 1: list of categories. */
 				echo $icon ? '' : '<div class="top-meta">';
-				printf( '<span class="cat-links"> %s' . $categories_list . '</span>', $icon ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+				printf( '<span class="cat-links">%s %s</span>', $icon, $categories_list ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 				echo $icon ? '' : '</div>';
 			}
 		}

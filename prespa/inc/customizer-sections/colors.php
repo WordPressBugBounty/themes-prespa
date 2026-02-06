@@ -259,15 +259,11 @@ if ( ! function_exists( 'prespa_customize_colors_css' ) ) :
 		body:not(.dark-mode) input[type="button"], 
 		body:not(.dark-mode) input[type="reset"], 
 		body:not(.dark-mode) [type="submit"],
-		.wp-block-button > .slider-button {
+		.wp-block-button > .slider-button,
+		.wp-block-button:not(.is-style-outline) .wp-block-button__link {
 			background-color: <?php echo $buttons_bgr_color ? esc_attr( $buttons_bgr_color ) : esc_attr( $primary_accent_color ); ?>;
 		}
 
-		<?php if ( $buttons_bgr_color ) : ?>
-		.wp-element-button, .wp-block-button__link {
-			background-color: <?php echo esc_attr( $buttons_bgr_color ); ?>;
-		}
-		<?php endif; ?>
 		.back-to-top,
 		.dark-mode .back-to-top,
 		.navigation .page-numbers:hover,

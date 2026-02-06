@@ -306,8 +306,10 @@ Button Hover Animations
 	}
 
 	.p-btn-animation-hover-arrow .wp-block-button__link::after{
+		display: inline-block;
 		transition: .3s ease-in-out;
 		opacity: 0;
+		width: 0;
 		content: ">";
 	}
 
@@ -315,7 +317,6 @@ Button Hover Animations
 		opacity: 1;
 		padding-left: .375rem;
 	}
-
 }
 
 /* Block Pattern keyframes */

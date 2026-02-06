@@ -40,7 +40,7 @@ export function blocksInViewport() {
 	}
 	// customizer preview fix
 	const previewedElements = document.querySelectorAll(
-		'.hero-pattern .wp-block-columns, .header-pattern .wp-block-columns'
+		'.hero-pattern .wp-block-columns, .header-pattern.wp-block-group, .header-pattern .wp-block-columns'
 	);
 
 	for ( let i = 0; i < previewedElements.length; i++ ) {
