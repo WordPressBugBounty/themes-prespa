@@ -29,8 +29,8 @@
 <figure class="wp-block-image aligncenter size-full is-resized"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/patterns/icons/user-friendly.svg" alt="" class="wp-image-253" width="40" height="40"/></figure>
 <!-- /wp:image -->
 
-<!-- wp:heading {"textAlign":"center","level":5,"style":{"spacing":{"padding":{"top":"var:preset|spacing|xx-small"}},"typography":{"letterSpacing":"-0.04em","lineHeight":1.1}},"className":"wp-block-heading"} -->
-<h5 class="has-text-align-center wp-block-heading" style="padding-top:var(--wp--preset--spacing--xx-small);letter-spacing:-0.04em;line-height:1.1"><?php esc_html_e( 'UX / UI', 'prespa' ); ?></h5>
+<!-- wp:heading {"textAlign":"center","level":3,"style":{"spacing":{"padding":{"top":"var:preset|spacing|xx-small"}},"typography":{"letterSpacing":"-0.04em","lineHeight":1.1}},"className":"wp-block-heading"} -->
+<h3 class="has-text-align-center wp-block-heading" style="padding-top:var(--wp--preset--spacing--xx-small);letter-spacing:-0.04em;line-height:1.1"><?php esc_html_e( 'UX / UI', 'prespa' ); ?></h3>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"align":"center"} -->
@@ -43,8 +43,8 @@
 <figure class="wp-block-image aligncenter size-full is-resized"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/patterns/icons/collaboration-support.svg" alt="" class="wp-image-254" width="40" height="40"/></figure>
 <!-- /wp:image -->
 
-<!-- wp:heading {"textAlign":"center","level":5,"style":{"spacing":{"padding":{"top":"var:preset|spacing|xx-small"}},"typography":{"letterSpacing":"-0.03em","lineHeight":1.1}},"className":"wp-block-heading"} -->
-<h5 class="has-text-align-center wp-block-heading" style="padding-top:var(--wp--preset--spacing--xx-small);letter-spacing:-0.03em;line-height:1.1"><?php esc_html_e( 'Research & Analysis', 'prespa' ); ?></h5>
+<!-- wp:heading {"textAlign":"center","level":3,"style":{"spacing":{"padding":{"top":"var:preset|spacing|xx-small"}},"typography":{"letterSpacing":"-0.03em","lineHeight":1.1}},"className":"wp-block-heading"} -->
+<h3 class="has-text-align-center wp-block-heading" style="padding-top:var(--wp--preset--spacing--xx-small);letter-spacing:-0.03em;line-height:1.1"><?php esc_html_e( 'Research & Analysis', 'prespa' ); ?></h3>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"align":"center"} -->
@@ -57,8 +57,8 @@
 <figure class="wp-block-image aligncenter size-full is-resized"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/patterns/icons/check-square.svg" alt="" class="wp-image-256" width="40" height="40"/></figure>
 <!-- /wp:image -->
 
-<!-- wp:heading {"textAlign":"center","level":5,"style":{"spacing":{"padding":{"top":"var:preset|spacing|xx-small"}},"typography":{"letterSpacing":"-0.03em","lineHeight":1.1}},"className":"wp-block-heading"} -->
-<h5 class="has-text-align-center wp-block-heading" style="padding-top:var(--wp--preset--spacing--xx-small);letter-spacing:-0.03em;line-height:1.1"><?php esc_html_e( 'Speed Optimization', 'prespa' ); ?></h5>
+<!-- wp:heading {"textAlign":"center","level":3,"style":{"spacing":{"padding":{"top":"var:preset|spacing|xx-small"}},"typography":{"letterSpacing":"-0.03em","lineHeight":1.1}},"className":"wp-block-heading"} -->
+<h3 class="has-text-align-center wp-block-heading" style="padding-top:var(--wp--preset--spacing--xx-small);letter-spacing:-0.03em;line-height:1.1"><?php esc_html_e( 'Speed Optimization', 'prespa' ); ?></h3>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"align":"center"} -->
@@ -73,8 +73,8 @@
 <figure class="wp-block-image aligncenter size-full is-resized"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/patterns/icons/user-check.svg" alt="" class="wp-image-253" width="40" height="40"/></figure>
 <!-- /wp:image -->
 
-<!-- wp:heading {"textAlign":"center","level":5,"style":{"spacing":{"padding":{"top":"var:preset|spacing|xx-small"}},"typography":{"letterSpacing":"-0.04em","lineHeight":1.1}},"className":"wp-block-heading"} -->
-<h5 class="has-text-align-center wp-block-heading" style="padding-top:var(--wp--preset--spacing--xx-small);letter-spacing:-0.04em;line-height:1.1"><?php esc_html_e( 'Brand Identity', 'prespa' ); ?></h5>
+<!-- wp:heading {"textAlign":"center","level":3,"style":{"spacing":{"padding":{"top":"var:preset|spacing|xx-small"}},"typography":{"letterSpacing":"-0.04em","lineHeight":1.1}},"className":"wp-block-heading"} -->
+<h3 class="has-text-align-center wp-block-heading" style="padding-top:var(--wp--preset--spacing--xx-small);letter-spacing:-0.04em;line-height:1.1"><?php esc_html_e( 'Brand Identity', 'prespa' ); ?></h3>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"align":"center"} -->
@@ -87,8 +87,8 @@
 <figure class="wp-block-image aligncenter size-full is-resized"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/patterns/icons/code.svg" alt="" class="wp-image-254" width="40" height="40"/></figure>
 <!-- /wp:image -->
 
-<!-- wp:heading {"textAlign":"center","level":5,"style":{"spacing":{"padding":{"top":"var:preset|spacing|xx-small"}},"typography":{"letterSpacing":"-0.03em","lineHeight":1.1}},"className":"wp-block-heading"} -->
-<h5 class="has-text-align-center wp-block-heading" style="padding-top:var(--wp--preset--spacing--xx-small);letter-spacing:-0.03em;line-height:1.1"><?php esc_html_e( 'Web Development', 'prespa' ); ?></h5>
+<!-- wp:heading {"textAlign":"center","level":3,"style":{"spacing":{"padding":{"top":"var:preset|spacing|xx-small"}},"typography":{"letterSpacing":"-0.03em","lineHeight":1.1}},"className":"wp-block-heading"} -->
+<h3 class="has-text-align-center wp-block-heading" style="padding-top:var(--wp--preset--spacing--xx-small);letter-spacing:-0.03em;line-height:1.1"><?php esc_html_e( 'Web Development', 'prespa' ); ?></h3>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"align":"center"} -->
@@ -101,8 +101,8 @@
 <figure class="wp-block-image aligncenter size-full is-resized"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/patterns/icons/command.svg" alt="" class="wp-image-256" width="40" height="40"/></figure>
 <!-- /wp:image -->
 
-<!-- wp:heading {"textAlign":"center","level":5,"style":{"spacing":{"padding":{"top":"var:preset|spacing|xx-small"}},"typography":{"letterSpacing":"-0.03em","lineHeight":1.1}},"className":"wp-block-heading"} -->
-<h5 class="has-text-align-center wp-block-heading" style="padding-top:var(--wp--preset--spacing--xx-small);letter-spacing:-0.03em;line-height:1.1"><?php esc_html_e( 'Project Management', 'prespa' ); ?></h5>
+<!-- wp:heading {"textAlign":"center","level":3,"style":{"spacing":{"padding":{"top":"var:preset|spacing|xx-small"}},"typography":{"letterSpacing":"-0.03em","lineHeight":1.1}},"className":"wp-block-heading"} -->
+<h3 class="has-text-align-center wp-block-heading" style="padding-top:var(--wp--preset--spacing--xx-small);letter-spacing:-0.03em;line-height:1.1"><?php esc_html_e( 'Project Management', 'prespa' ); ?></h3>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"align":"center"} -->

@@ -28,11 +28,11 @@
 
 <!-- wp:buttons -->
 <div class="wp-block-buttons"><!-- wp:button -->
-<div class="wp-block-button"><a class="wp-block-button__link wp-element-button"><span>Request demo</span></a></div>
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="#"><span>Request demo</span></a></div>
 <!-- /wp:button -->
 
 <!-- wp:button {"textColor":"black","style":{"color":{"background":"#ebeefc"},"border":{"radius":"3px"}},"className":"is-style-fill"} -->
-<div class="wp-block-button is-style-fill"><a class="wp-block-button__link has-black-color has-text-color has-background wp-element-button" style="border-radius:3px;background-color:#ebeefc"><span>Schedule call</span></a></div>
+<div class="wp-block-button is-style-fill"><a class="wp-block-button__link has-black-color has-text-color has-background wp-element-button" href="#" style="border-radius:3px;background-color:#ebeefc"><span>Schedule call</span></a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
 <!-- /wp:column -->

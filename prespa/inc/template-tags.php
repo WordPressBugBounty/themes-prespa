@@ -578,7 +578,7 @@ function prespa_call_to_action_markup() {
 
 function prespa_dark_mode_button_markup() {
 	?>
-	<button aria-label="Click to toggle dark mode" class="dark-mode-widget">
+	<button aria-label="<?php esc_attr_e( 'Toggle dark mode', 'prespa' ); ?>" aria-pressed="false" class="dark-mode-widget">
 	   <?php echo wp_kses( prespa_get_svg( 'sun' ), prespa_get_kses_extended_ruleset() ); ?>
 	   <?php echo wp_kses( prespa_get_svg( 'moon' ), prespa_get_kses_extended_ruleset() ); ?>
 	</button>
@@ -629,7 +629,7 @@ add_filter( 'wp_list_pages', 'prespa_primary_menu_object', 10, 2 );
 function prespa_add_search_box() {
 	?>
 	<li class="search-icon">
-		<a href="#search-open" aria-label="<?php _e( 'search', 'prespa' ); ?>">
+		<a href="#search-open" aria-label="<?php esc_attr_e( 'search', 'prespa' ); ?>">
 			<?php echo wp_kses( prespa_get_svg( 'search' ), prespa_get_kses_extended_ruleset() ); ?>
 		</a>
 	</li>
@@ -648,7 +648,7 @@ function prespa_full_screen_search() {
 			</div>
 		</div>
 		<a href="#search-close" class="close">
-			<button class="close-btn" tabindex="-1" aria-label="<?php _e( 'close', 'prespa' ); ?>">
+			<button class="close-btn" aria-label="<?php esc_attr_e( 'Close search', 'prespa' ); ?>">
 			<?php
 			echo wp_kses( prespa_get_svg( 'close' ), prespa_get_kses_extended_ruleset() );
 			?>

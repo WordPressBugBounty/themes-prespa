@@ -145,7 +145,7 @@ function prespa_settings_page_doc() {
 								<strong><?php esc_html_e( '3. Where are the custom block patterns?', 'prespa' ); ?></strong>
 								<p><i><?php esc_html_e( 'In the WordPress admin, create or edit a page, then click on the plus icon in the top left corner of the Gutenberg editor. From there, navigate to the "Patterns" tab and select "Prespa" from the pattern dropdown.', 'prespa' ); ?></i></p>
 								<br>
-								<strong><?php esc_html_e( '4. Can I make a website that looks exactly like the theme demo?', 'prespa' ); ?></strong>
+								<strong><?php esc_html_e( '4. Can I make a website that looks exactly like any of the theme demos?', 'prespa' ); ?></strong>
 								<p><i><?php esc_html_e( 'Absolutely! all you need to do is upgrade to Prespa PRO and run the one-click demo import.', 'prespa' ); ?></i></p>
 								<br>
 								<strong><?php esc_html_e( '5. I have already purchased the premium version. How do I install and activate it?', 'prespa' ); ?></strong>
@@ -237,7 +237,7 @@ function prespa_settings_page_doc() {
 												<?php esc_html_e( 'One Click Demo Import', 'prespa' );?>
 										</td>
 										<td><span class="dashicons dashicons-minus"></span></td>
-										<td><span class="dashicons dashicons-yes-alt"></span> <strong><?php esc_html_e('12 Demo templates','prespa'); ?></strong</td>
+										<td><span class="dashicons dashicons-yes-alt"></span> <strong><?php esc_html_e('14 Demo templates','prespa'); ?></strong</td>
 									</tr>
 									<tr>
 										<td><div class="nasio-tooltip"><span class="dashicons dashicons-editor-help"></span><span class="nasio-tooltiptext">
@@ -257,7 +257,7 @@ function prespa_settings_page_doc() {
 										</td>
 										<td>
 											<span class="dashicons dashicons-yes-alt"></span>
-											<?php esc_html_e( '63', 'prespa' ); ?>
+											<?php esc_html_e( '75', 'prespa' ); ?>
 										</td>
 									</tr>
 									<tr>

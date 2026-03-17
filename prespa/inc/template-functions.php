@@ -175,7 +175,7 @@ add_filter( 'excerpt_more', 'prespa_excerpt_more' );
 // Add very simple breadcrumps
 if ( ! function_exists( 'prespa_breadcrumbs' ) ) :
 	function prespa_breadcrumbs() {
-		if ( ! prespa_has_breadcrumbs() || is_front_page() || ( class_exists( 'Woocommerce' ) && is_product_category() ) ) {
+		if ( ! prespa_has_breadcrumbs() || is_front_page() || ( class_exists( 'Woocommerce' ) && is_product_category() ) || ( ( is_single() || is_page() ) && get_the_title() === '' ) ) {
 			return;
 		}
 

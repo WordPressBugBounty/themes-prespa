@@ -29,7 +29,7 @@ prespa_schema_microdata( 'body' );
 	<header id="masthead" class="site-header" role="banner" <?php prespa_schema_microdata( 'header' ); ?>>
 	<?php
 	if ( prespa_has_secondary_menu() ) : ?>
-		<nav id="top-navigation" class="top-menu site-menu" aria-label=<?php _e('Secondary navigation', 'prespa')?>>
+		<nav id="top-navigation" class="top-menu site-menu" aria-label="<?php esc_attr_e( 'Secondary navigation', 'prespa' ); ?>">
 			<div class="header-content-wrapper">
 				<?php
 				/**
@@ -64,10 +64,10 @@ prespa_schema_microdata( 'body' );
 					<?php endif; ?>
 				</div><!-- .site-branding -->
 
-				<nav id="main-navigation" class="main-navigation site-menu" aria-label="<?php _e('Main navigation', 'prespa')?>" <?php prespa_schema_microdata( 'menu' ); ?>>
-					<button class="menu-toggle" data-toggle="collapse" aria-controls="site-menu" aria-expanded="false" aria-label="<?php _e('Toggle Navigation', 'prespa')?>">
+				<nav id="main-navigation" class="main-navigation site-menu" aria-label="<?php esc_attr_e( 'Main navigation', 'prespa' ); ?>" <?php prespa_schema_microdata( 'menu' ); ?>>
+					<button class="menu-toggle" data-toggle="collapse" aria-controls="site-menu" aria-expanded="false" aria-label="<?php esc_attr_e( 'Toggle Navigation', 'prespa' ); ?>">
 						<span class="menu-toggle-icon">
-							<input class="burger-check" id="burger-check" type="checkbox"><label for="burger-check" class="burger"></label>
+							<input class="burger-check" id="burger-check" type="checkbox" aria-hidden="true" tabindex="-1"><label for="burger-check" class="burger" aria-hidden="true"></label>
 						</span>
 					</button>
 					<?php

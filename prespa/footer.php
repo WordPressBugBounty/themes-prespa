@@ -35,7 +35,7 @@ do_action('prespa_footer');
 				</div>
 				<?php endif;
 				if ( is_active_sidebar( 'sidebar-5' ) ) : ?>
-				<div class="widget-column footer-widget-2">
+				<div class="widget-column footer-widget-4">
 					<?php dynamic_sidebar( 'sidebar-5' ); ?>
 				</div>
 				<?php endif; ?>

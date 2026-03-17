@@ -9,11 +9,13 @@ export function darkMode() {
 		switchers[ i ].addEventListener( 'click', function() {
 			if ( ! this.classList.contains( 'js-toggle--checked' ) ) {
 				this.classList.add( 'js-toggle--checked' );
+				this.setAttribute( 'aria-pressed', 'true' );
 				body.classList.add( 'dark-mode' );
 				//Save user preference in storage
 				localStorage.setItem( 'prespaNightMode', 'true' );
 			} else {
 				this.classList.remove( 'js-toggle--checked' );
+				this.setAttribute( 'aria-pressed', 'false' );
 				body.classList.remove( 'dark-mode' );
 				setTimeout( function() {
 					localStorage.removeItem( 'prespaNightMode' );
@@ -26,6 +28,7 @@ export function darkMode() {
 	if ( localStorage.getItem( 'prespaNightMode' ) ) {
 		for ( let i = 0; i < switchers.length; i++ ) {
 			switchers[ i ].classList.add( 'js-toggle--checked' );
+			switchers[ i ].setAttribute( 'aria-pressed', 'true' );
 			body.classList.add( 'dark-mode' );
 		}
 	}

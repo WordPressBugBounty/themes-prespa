@@ -123,7 +123,7 @@ msgid "In the WordPress admin, create or edit a page, then click on the plus ico
 msgstr ""
 
 #: admin/theme-intro.php:142
-msgid "4. Can I make a website that looks exactly like the theme demo?"
+msgid "4. Can I make a website that looks exactly like any of the theme demos?"
 msgstr ""
 
 #: admin/theme-intro.php:143
@@ -190,7 +190,7 @@ msgid "One Click Demo Import"
 msgstr ""
 
 #: admin/theme-intro.php:234
-msgid "12 Demo templates"
+msgid "14 Demo templates"
 msgstr ""
 
 #: admin/theme-intro.php:238
