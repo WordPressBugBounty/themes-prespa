@@ -1192,7 +1192,7 @@ msgid "Site Layout & Sidebar"
 msgstr ""
 
 #: inc/customizer-sections/layout.php:13
-msgid "Set custom width for the header, container and the footer. Wrap posts and pages into beatiful containers."
+msgid "Set custom width for the header, container and the footer. Wrap posts and pages into beautiful containers."
 msgstr ""
 
 #: inc/customizer-sections/layout.php:20
@@ -1215,7 +1215,7 @@ msgid "Container Layout"
 msgstr ""
 
 #: inc/customizer-sections/layout.php:30
-msgid "Set custom width for posts and pages. Wrap posts and pages into beatiful containers. More options - go pro version."
+msgid "Set custom width for posts and pages. Wrap posts and pages into beautiful containers. More options - go pro version."
 msgstr ""
 
 #: inc/customizer-sections/layout.php:38

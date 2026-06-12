@@ -64,9 +64,15 @@
 		padding: 0.25em 0.5em;
 
 		&::after {
-			content: "\25BC";
+			content: '';
+			display: inline-block;
+			width: 7px;
+			height: 7px;
 			color: #fff;
-			font-size: 12px;
+			border-right: 2px solid currentColor;
+			border-bottom: 2px solid currentColor;
+			transform: rotate(45deg);
+			transition: transform 0.3s ease;
 			position: relative;
 			bottom: 1px;
 		}
@@ -404,17 +410,23 @@
 
 	.site-menu li.page_item_has_children > a::after,
 	.site-menu li.menu-item-has-children > a::after {
-		content: "\25bc";
-		font-size: 7px;
+		content: '';
+		display: inline-block;
+		width: 6px;
+		height: 6px;
+		border-right: 2px solid currentColor;
+		border-bottom: 2px solid currentColor;
+		transform: rotate(45deg);
+		margin-left: 6px;
 		vertical-align: 1px;
-		padding-left: 5px;
 		opacity: 0.75;
+		transition: transform 0.3s ease;
 	}
 
 	/*rtl:raw:
 	.site-menu li li.page_item_has_children > a::after,
 	.site-menu li li.menu-item-has-children > a::after {
-		content: "\25C0";
+		transform: rotate(225deg);
 	}
 	*/
 
@@ -422,7 +434,7 @@
 	.site-menu li li.menu-item-has-children > a::after {
 
 		/*rtl:remove*/
-		content: "\25b6";
+		transform: rotate(-45deg);
 
 		/*rtl:remove*/
 	}

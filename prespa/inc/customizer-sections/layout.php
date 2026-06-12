@@ -10,7 +10,7 @@ function prespa_register_theme_layout_options( $wp_customize ) {
 		'prespa_layout_options',
 		array(
 			'title'       => esc_html__( 'Site Layout & Sidebar', 'prespa' ),
-			'description' => esc_html__( 'Set custom width for the header, container and the footer. Wrap posts and pages into beatiful containers.', 'prespa' ),
+			'description' => esc_html__( 'Set custom width for the header, container and the footer. Wrap posts and pages into beautiful containers.', 'prespa' ),
 		)
 	);
 
@@ -27,7 +27,7 @@ function prespa_register_theme_layout_options( $wp_customize ) {
 		'container_layout',
 		array(
 			'title'       => esc_html__( 'Container Layout', 'prespa' ),
-			'description' => esc_html__( 'Set custom width for posts and pages. Wrap posts and pages into beatiful containers. More options - go pro version.', 'prespa' ),
+			'description' => esc_html__( 'Set custom width for posts and pages. Wrap posts and pages into beautiful containers. More options - go pro version.', 'prespa' ),
 			'panel'       => esc_html__( 'prespa_layout_options', 'prespa' ),
 		)
 	);
