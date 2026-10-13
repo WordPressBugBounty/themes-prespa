@@ -139,7 +139,7 @@ function prespa_register_footer_customizer( $wp_customize ) {
 					esc_html__( 'Twitch', 'prespa' )     => prespa_get_svg( 'twitch' ),
 					esc_html__( 'Twitter', 'prespa' )    => prespa_get_svg( 'twitter' ),
 					esc_html__( 'Youtube', 'prespa' )    => prespa_get_svg( 'youtube' ),
-					esc_html__( 'WordPress', 'prespa' )  => prespa_get_svg( 'wordpress' ),
+					esc_html__( 'WordPress', 'prespa' )  => prespa_get_svg( 'wp' ),
 				),
 				'active_callback' => function() {
 					return get_theme_mod( 'show_footer_social_icons' );

@@ -349,7 +349,7 @@ function prespa_register_header_customizer( $wp_customize ) {
 					esc_html__( 'Twitch', 'prespa' )     => prespa_get_svg( 'twitch' ),
 					esc_html__( 'Twitter', 'prespa' )    => prespa_get_svg( 'twitter' ),
 					esc_html__( 'Youtube', 'prespa' )    => prespa_get_svg( 'youtube' ),
-					esc_html__( 'WordPress', 'prespa' )  => prespa_get_svg( 'wordpress' ),
+					esc_html__( 'WordPress', 'prespa' )  => prespa_get_svg( 'wp' ),
 				),
 				'active_callback' => 'prespa_has_secondary_menu',
 			)

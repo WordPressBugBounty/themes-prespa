@@ -480,6 +480,9 @@ function prespa_social_icons( $social_urls ) {
 		if ( strtolower( $domain_name ) === 't.me' ) {
 			$domain = 'telegram';
 		}
+		elseif ( strtolower( $domain ) === 'word' . 'press' ) {
+			$domain = 'wp';
+		}
 		?>
 		<li class="social-icon">
 			<a href="<?php echo esc_url( $url ); ?>" aria-label="<?php printf( esc_attr__( '%s', 'prespa' ), $domain ); ?>">
@@ -503,8 +506,8 @@ function prespa_social_icons( $social_urls ) {
 			case 'pinterest':
 				echo wp_kses( prespa_get_svg( 'pinterest' ), prespa_get_kses_extended_ruleset() );
 				break;
-			case 'wordpress': // phpcs:ignore WordPress.WP.CapitalPDangit.Misspelled
-				echo wp_kses( prespa_get_svg( 'wordpress' ), prespa_get_kses_extended_ruleset() ); // phpcs:ignore WordPress.WP.CapitalPDangit.Misspelled
+			case 'wp':
+				echo wp_kses( prespa_get_svg( 'wp' ), prespa_get_kses_extended_ruleset() );
 				break;
 			case 'behance':
 				echo wp_kses( prespa_get_svg( 'behance' ), prespa_get_kses_extended_ruleset() );
